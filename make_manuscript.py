@@ -128,8 +128,11 @@ _full = _g.groupby(["Model", "Dataset", "Split"]).Primary.mean().unstack(["Datas
 _cols = [(d, p) for d in [x for x in ["FreeSolv", "ESOL", "Lipophilicity", "BACE", "BBBP"] if x in set(_g.Dataset)] for p in ["random", "bm_scaffold", "generic_scaffold", "butina_cluster"]]
 _full = _full[_cols]; NCOL = len(_cols)
 _ab = {"random": "R", "bm_scaffold": "BM", "generic_scaffold": "G", "butina_cluster": "Bu"}
-full_head = " & ".join(f"{d[:4]}-{_ab[p]}" for d, p in _cols)
-full_rows = "\n".join(f"{m.replace('&', 'and')} & " + " & ".join(f"{v:.3f}" for v in r.values) + " \\\\" for m, r in _full.iterrows())
+def _part(cols):
+    head = " & ".join(f"{d[:4]}-{_ab[p]}" for d, p in cols)
+    rows = "\n".join(f"{m.replace('&', 'and')} & " + " & ".join(f"{v:.3f}" for v in r.values) + " \\\\" for m, r in _full[cols].iterrows())
+    return head, rows, len(cols)
+full_reg = _part([c for c in _cols if c[0] not in ("BACE", "BBBP")]); full_cls = _part([c for c in _cols if c[0] in ("BACE", "BBBP")])
 # ------------------------------------------------------------------ main text
 tex = r"""\documentclass[journal=jcisd8,manuscript=article]{achemso}
 \usepackage{colortbl}
@@ -307,7 +310,7 @@ We quantified carbon-skeleton overlap under BM scaffold splits on """ + NDW + r"
 All datasets are public (MoleculeNet). The complete pipeline---curation, splitting, featurisation, all models, the """ + str(NF) + r"""-fold benchmark, statistics, figures and this manuscript---is provided as a single Jupyter notebook together with per-fold predictions and the pre-specified analysis plan. All code, the notebook, per-fold predictions, the analysis plan with its addenda and the frozen-design records are available at \url{https://github.com/bhaskargurram-ai/SIG-Net}; the curated data bundle with all split indices is attached to release v1.0 of that repository.
 
 \begin{suppinfo}
-Supporting Information: pre-specified analysis plan; full benchmark of all models (Table~S1); full rankings (Table~S2); all paired comparisons (Table~S3); per-setting results (Table~S4).
+Supporting Information: pre-specified analysis plan; full benchmark of all models (Table~S1); full rankings (Table~S2); all paired comparisons (Table~S3); all comparisons on the confirmatory splits (Table~S4); per-setting results (Table~S5).
 \end{suppinfo}
 
 
@@ -318,28 +321,97 @@ Supporting Information: pre-specified analysis plan; full benchmark of all model
 \end{document}
 """
 
+
+def md2tex(md):
+    """Typeset the Markdown analysis plan as LaTeX (text unchanged; formatting only)."""
+    import re
+    def esc(t):
+        t = t.replace("\\", "\x00")
+        for a, b in [("&", r"\&"), ("%", r"\%"), ("$", r"\$"), ("#", r"\#"), ("_", r"\_"), ("{", r"\{"), ("}", r"\}"),
+                     ("~", r"\textasciitilde{}"), ("^", r"\textasciicircum{}"), ("\x00", r"\textbackslash{}"),
+                     ("—", "---"), ("–", "--"), ("−", "$-$"), ("≥", r"$\geq$"), ("≤", r"$\leq$"), ("×", r"$\times$")]:
+            t = t.replace(a, b)
+        t = re.sub(r"`([^`]+)`", r"\\texttt{\1}", t)
+        t = re.sub(r"\*\*([^*]+)\*\*", r"\\textbf{\1}", t)
+        return t.replace('"', "''")
+    out, env, buf = [], None, []
+    def flush():
+        nonlocal buf
+        if buf:
+            out.append((r"\item " if env else "") + esc(" ".join(buf)) + ("" if env else "\n"))
+            buf = []
+    def set_env(e):
+        nonlocal env
+        flush()
+        if env != e:
+            if env: out.append(r"\end{%s}" % env)
+            if e: out.append(r"\begin{%s}[leftmargin=*,itemsep=1pt,topsep=2pt]" % e)
+            env = e
+    for line in md.splitlines():
+        st = line.strip()
+        if not st:
+            set_env(None); continue
+        h = re.match(r"^(#+)\s+(.*)", line)
+        if h:
+            set_env(None)
+            cmd = {1: r"\subsection*", 2: r"\subsubsection*"}.get(len(h.group(1)), r"\paragraph*")
+            out.append(cmd + "{" + esc(h.group(2)) + "}"); continue
+        m = re.match(r"^(- |\d+\. )(.*)", line)
+        if m:
+            set_env("itemize" if m.group(1) == "- " else "enumerate"); flush(); buf = [m.group(2)]; continue
+        if line.startswith("  ") and env:
+            buf.append(st); continue
+        if st.startswith("**") and not env:
+            flush(); buf = [st]; continue
+        if env:
+            set_env(None)
+        buf.append(st)
+    set_env(None)
+    return "\n".join(out)
+
 si = r"""\documentclass[11pt]{article}
 \usepackage[margin=18mm]{geometry}
-\usepackage{amsmath,booktabs,longtable,graphicx,pdflscape}
+\usepackage{amsmath,booktabs,longtable,graphicx,pdflscape,enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \renewcommand{\thetable}{S\arabic{table}}
 \begin{document}
 \begin{center}{\Large\bfseries Supporting Information}\\[4pt]
 SIG-Net: Similarity-Informed Local-Competence Mixtures of Cross-Fitted Experts for Molecular Property Prediction under Leakage-Audited Out-of-Distribution Splits\end{center}
 
 \section*{S1. Pre-specified analysis plan}
-The analysis plan below was written after the final SIG-Net run was launched and before any of its test-set results were inspected. The SIG-Net design was fixed using validation scores on three development folds.
-\begin{verbatim}
-""" + open(os.path.join(ROOT, "ANALYSIS_PLAN.md"), encoding="utf-8").read().replace("—", "--").replace("−", "-") + r"""
-\end{verbatim}
+The analysis plan below was written after the final SIG-Net run was launched and before any of its test-set results were inspected. The SIG-Net design was fixed using validation scores on three development folds. The plan and its two addenda are reproduced with their original wording and timestamps; only the formatting has been converted from Markdown.
+{\small
+""" + md2tex(open(os.path.join(ROOT, "ANALYSIS_PLAN.md"), encoding="utf-8").read()) + r"""
+}
 
-\section*{S2. Full benchmark}
-\begin{landscape}{\tiny\setlength{\tabcolsep}{1.5pt}
-\begin{longtable}{l""" + "c" * NCOL + r"""}
-\caption{Mean test metric over five seeds for every model (RMSE for FreeSolv/ESOL/Lipophilicity, ROC-AUC for BACE/BBBP). R: random, BM: Bemis--Murcko scaffold, G: generic skeleton, Bu: Butina cluster.}\\
+\begin{landscape}
+\section*{S2. Full benchmark}{\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{l""" + "c" * full_reg[2] + r"""}
+\caption{Mean test metric over five seeds for every model. (a) Regression tasks, test RMSE (lower is better). R: random, BM: Bemis--Murcko scaffold, G: generic skeleton, Bu: Butina cluster.}\\
 \toprule
-Model & """ + full_head + r""" \\
+Model & """ + full_reg[0] + r""" \\
 \midrule
-""" + full_rows + r"""
+\endfirsthead
+\toprule
+Model & """ + full_reg[0] + r""" \\
+\midrule
+\endhead
+""" + full_reg[1] + r"""
+\bottomrule
+\end{longtable}
+\addtocounter{table}{-1}
+\begin{longtable}{l""" + "c" * full_cls[2] + r"""}
+\caption{(continued) (b) Classification tasks, test ROC-AUC (higher is better).}\\
+\toprule
+Model & """ + full_cls[0] + r""" \\
+\midrule
+\endfirsthead
+\toprule
+Model & """ + full_cls[0] + r""" \\
+\midrule
+\endhead
+""" + full_cls[1] + r"""
 \bottomrule
 \end{longtable}}
 \end{landscape}
@@ -355,6 +427,7 @@ Model & """ + full_head + r""" \\
 \end{longtable}
 
 \section*{S4. All paired comparisons (""" + str(NF) + r""" folds)}
+{\small\setlength{\tabcolsep}{4pt}
 \begin{longtable}{lccrrc}
 \caption{SIG-Net vs.\ every other model. Relative improvement per fold (\%), two-sided Wilcoxon signed-rank test.}\\
 \toprule
@@ -362,9 +435,10 @@ Comparator & Folds won & Settings won & Mean & Median & $p$ \\
 \midrule
 """ + t4_full + r"""
 \bottomrule
-\end{longtable}
+\end{longtable}}
 
-\section*{S6. Confirmation on fresh splits: all comparisons}
+\section*{S5. Confirmation on fresh splits: all comparisons}
+{\small
 \begin{longtable}{lcrrc}
 \caption{SIG-Net v4 vs.\ every router and cross-fitted expert on the confirmatory folds (seeds 1--3).}\\
 \toprule
@@ -372,17 +446,20 @@ Comparator & Folds won & Mean (\%) & Median (\%) & $p$ \\
 \midrule
 """ + conf_all + r"""
 \bottomrule
-\end{longtable}
+\end{longtable}}
 
-\section*{S5. Per-setting results}
-\begin{longtable}{llccccccc}
+\begin{landscape}
+\section*{S6. Per-setting results}
+{\small
+\begin{longtable}{llcclccc}
 \caption{SIG-Net vs.\ the best other external model in each setting (mean $\pm$ SD over 5 seeds); paired $t$-test over seeds (descriptive; low power with $n=5$).}\\
 \toprule
 Dataset & Split & SIG-Net & Best other & Model & Rank & Seed wins & $p$ \\
 \midrule
 """ + ps_rows + r"""
 \bottomrule
-\end{longtable}
+\end{longtable}}
+\end{landscape}
 \end{document}
 """
 open(os.path.join(MS, "SIG_Net_JCIM_manuscript.tex"), "w", encoding="utf-8").write(tex)
