@@ -1,0 +1,161 @@
+Dataset,Split,Model,score,task
+BACE,bm_scaffold,Global stack (7),0.9292734292734293,classification
+BACE,bm_scaffold,Global stack (9),0.9317304317304317,classification
+BACE,bm_scaffold,v3 router (7),0.9289224289224289,classification
+BACE,bm_scaffold,v4 full (9),0.9315549315549316,classification
+BACE,bm_scaffold,v4 full (7),0.9297999297999298,classification
+BACE,bm_scaffold,v4 w/o residual corr (9),0.9306774306774307,classification
+BACE,bm_scaffold,v4 w/o composite kernel (9),0.9315549315549316,classification
+BACE,bm_scaffold,v4 w/o novelty shrinkage (9),0.9219024219024219,classification
+BACE,butina_cluster,Global stack (7),0.7329225352112676,classification
+BACE,butina_cluster,Global stack (9),0.7201584507042254,classification
+BACE,butina_cluster,v3 router (7),0.741725352112676,classification
+BACE,butina_cluster,v4 full (9),0.7628521126760563,classification
+BACE,butina_cluster,v4 full (7),0.7582746478873239,classification
+BACE,butina_cluster,v4 w/o residual corr (9),0.761443661971831,classification
+BACE,butina_cluster,v4 w/o composite kernel (9),0.7628521126760563,classification
+BACE,butina_cluster,v4 w/o novelty shrinkage (9),0.761443661971831,classification
+BACE,generic_scaffold,Global stack (7),0.8359704641350211,classification
+BACE,generic_scaffold,Global stack (9),0.8466947960618846,classification
+BACE,generic_scaffold,v3 router (7),0.8338607594936709,classification
+BACE,generic_scaffold,v4 full (9),0.847837552742616,classification
+BACE,generic_scaffold,v4 full (7),0.8404535864978904,classification
+BACE,generic_scaffold,v4 w/o residual corr (9),0.8454641350210971,classification
+BACE,generic_scaffold,v4 w/o composite kernel (9),0.8556610407876231,classification
+BACE,generic_scaffold,v4 w/o novelty shrinkage (9),0.8506504922644164,classification
+BACE,random,Global stack (7),0.9358610914245216,classification
+BACE,random,Global stack (9),0.9347980155917789,classification
+BACE,random,v3 router (7),0.9287739192062368,classification
+BACE,random,v4 full (9),0.9243444365698086,classification
+BACE,random,v4 full (7),0.920623671155209,classification
+BACE,random,v4 w/o residual corr (9),0.9243444365698086,classification
+BACE,random,v4 w/o composite kernel (9),0.9243444365698086,classification
+BACE,random,v4 w/o novelty shrinkage (9),0.9243444365698086,classification
+BBBP,bm_scaffold,Global stack (7),0.9058928571428572,classification
+BBBP,bm_scaffold,Global stack (9),0.9082142857142856,classification
+BBBP,bm_scaffold,v3 router (7),0.9017857142857142,classification
+BBBP,bm_scaffold,v4 full (9),0.9105357142857142,classification
+BBBP,bm_scaffold,v4 full (7),0.9069642857142858,classification
+BBBP,bm_scaffold,v4 w/o residual corr (9),0.9108928571428573,classification
+BBBP,bm_scaffold,v4 w/o composite kernel (9),0.9142857142857143,classification
+BBBP,bm_scaffold,v4 w/o novelty shrinkage (9),0.9117857142857142,classification
+BBBP,butina_cluster,Global stack (7),0.9518788343558282,classification
+BBBP,butina_cluster,Global stack (9),0.9518788343558282,classification
+BBBP,butina_cluster,v3 router (7),0.9455521472392638,classification
+BBBP,butina_cluster,v4 full (9),0.9651073619631902,classification
+BBBP,butina_cluster,v4 full (7),0.9608895705521472,classification
+BBBP,butina_cluster,v4 w/o residual corr (9),0.9651073619631902,classification
+BBBP,butina_cluster,v4 w/o composite kernel (9),0.9614647239263804,classification
+BBBP,butina_cluster,v4 w/o novelty shrinkage (9),0.9651073619631902,classification
+BBBP,generic_scaffold,Global stack (7),0.9367407407407407,classification
+BBBP,generic_scaffold,Global stack (9),0.9348148148148149,classification
+BBBP,generic_scaffold,v3 router (7),0.9345185185185184,classification
+BBBP,generic_scaffold,v4 full (9),0.9397037037037037,classification
+BBBP,generic_scaffold,v4 full (7),0.938962962962963,classification
+BBBP,generic_scaffold,v4 w/o residual corr (9),0.9382222222222222,classification
+BBBP,generic_scaffold,v4 w/o composite kernel (9),0.9380740740740741,classification
+BBBP,generic_scaffold,v4 w/o novelty shrinkage (9),0.9348148148148149,classification
+BBBP,random,Global stack (7),0.9340740740740741,classification
+BBBP,random,Global stack (9),0.9345185185185185,classification
+BBBP,random,v3 router (7),0.9284444444444444,classification
+BBBP,random,v4 full (9),0.9266666666666667,classification
+BBBP,random,v4 full (7),0.9191111111111111,classification
+BBBP,random,v4 w/o residual corr (9),0.9299259259259259,classification
+BBBP,random,v4 w/o composite kernel (9),0.9309629629629629,classification
+BBBP,random,v4 w/o novelty shrinkage (9),0.9082222222222223,classification
+ESOL,bm_scaffold,Global stack (7),0.699919265979178,regression
+ESOL,bm_scaffold,Global stack (9),0.7000189705884649,regression
+ESOL,bm_scaffold,v3 router (7),0.6982727373398699,regression
+ESOL,bm_scaffold,v4 full (9),0.7009441631087563,regression
+ESOL,bm_scaffold,v4 full (7),0.6886197870031346,regression
+ESOL,bm_scaffold,v4 w/o residual corr (9),0.7009441631087563,regression
+ESOL,bm_scaffold,v4 w/o composite kernel (9),0.7078551394627767,regression
+ESOL,bm_scaffold,v4 w/o novelty shrinkage (9),0.7078551394627767,regression
+ESOL,butina_cluster,Global stack (7),0.596728939760923,regression
+ESOL,butina_cluster,Global stack (9),0.5967571339357939,regression
+ESOL,butina_cluster,v3 router (7),0.5975431719598607,regression
+ESOL,butina_cluster,v4 full (9),0.6255700489422836,regression
+ESOL,butina_cluster,v4 full (7),0.631781183621521,regression
+ESOL,butina_cluster,v4 w/o residual corr (9),0.6285986320451593,regression
+ESOL,butina_cluster,v4 w/o composite kernel (9),0.6370505293084867,regression
+ESOL,butina_cluster,v4 w/o novelty shrinkage (9),0.6607572690169915,regression
+ESOL,generic_scaffold,Global stack (7),0.7720756742500545,regression
+ESOL,generic_scaffold,Global stack (9),0.7718181949289821,regression
+ESOL,generic_scaffold,v3 router (7),0.7456879727329204,regression
+ESOL,generic_scaffold,v4 full (9),0.7528463319784441,regression
+ESOL,generic_scaffold,v4 full (7),0.7444579153142713,regression
+ESOL,generic_scaffold,v4 w/o residual corr (9),0.7587799545723827,regression
+ESOL,generic_scaffold,v4 w/o composite kernel (9),0.7575363810879325,regression
+ESOL,generic_scaffold,v4 w/o novelty shrinkage (9),0.7526844549267954,regression
+ESOL,random,Global stack (7),0.6171475566871176,regression
+ESOL,random,Global stack (9),0.6171604405416589,regression
+ESOL,random,v3 router (7),0.5844763499698454,regression
+ESOL,random,v4 full (9),0.5716546241221354,regression
+ESOL,random,v4 full (7),0.5664834115562821,regression
+ESOL,random,v4 w/o residual corr (9),0.5722922932133298,regression
+ESOL,random,v4 w/o composite kernel (9),0.5751711558653465,regression
+ESOL,random,v4 w/o novelty shrinkage (9),0.5604813007000435,regression
+FreeSolv,bm_scaffold,Global stack (7),1.8795171393930825,regression
+FreeSolv,bm_scaffold,Global stack (9),1.8795171417791794,regression
+FreeSolv,bm_scaffold,v3 router (7),1.8594832908894552,regression
+FreeSolv,bm_scaffold,v4 full (9),1.9348818919981008,regression
+FreeSolv,bm_scaffold,v4 full (7),1.9982323949546263,regression
+FreeSolv,bm_scaffold,v4 w/o residual corr (9),1.9339899082327432,regression
+FreeSolv,bm_scaffold,v4 w/o composite kernel (9),1.937592933357607,regression
+FreeSolv,bm_scaffold,v4 w/o novelty shrinkage (9),1.8200675590215736,regression
+FreeSolv,butina_cluster,Global stack (7),1.437828627284286,regression
+FreeSolv,butina_cluster,Global stack (9),1.4378287933929863,regression
+FreeSolv,butina_cluster,v3 router (7),1.4965950145625144,regression
+FreeSolv,butina_cluster,v4 full (9),1.4306079485249814,regression
+FreeSolv,butina_cluster,v4 full (7),1.4453923877615913,regression
+FreeSolv,butina_cluster,v4 w/o residual corr (9),1.4313597813513674,regression
+FreeSolv,butina_cluster,v4 w/o composite kernel (9),1.4314228183995616,regression
+FreeSolv,butina_cluster,v4 w/o novelty shrinkage (9),1.437828793392986,regression
+FreeSolv,generic_scaffold,Global stack (7),1.5044587798384728,regression
+FreeSolv,generic_scaffold,Global stack (9),1.5044587791680655,regression
+FreeSolv,generic_scaffold,v3 router (7),1.435762961637171,regression
+FreeSolv,generic_scaffold,v4 full (9),1.4813584791410663,regression
+FreeSolv,generic_scaffold,v4 full (7),1.4167588332602346,regression
+FreeSolv,generic_scaffold,v4 w/o residual corr (9),1.4913095647512482,regression
+FreeSolv,generic_scaffold,v4 w/o composite kernel (9),1.4913280939017806,regression
+FreeSolv,generic_scaffold,v4 w/o novelty shrinkage (9),1.4753997656983564,regression
+FreeSolv,random,Global stack (7),0.8064353690376912,regression
+FreeSolv,random,Global stack (9),0.8064684404710953,regression
+FreeSolv,random,v3 router (7),0.8379130828003813,regression
+FreeSolv,random,v4 full (9),0.7856335454699077,regression
+FreeSolv,random,v4 full (7),0.7856134237345959,regression
+FreeSolv,random,v4 w/o residual corr (9),0.873062281411241,regression
+FreeSolv,random,v4 w/o composite kernel (9),0.7905689109313494,regression
+FreeSolv,random,v4 w/o novelty shrinkage (9),0.7883862063468863,regression
+Lipophilicity,bm_scaffold,Global stack (7),0.5513236768256562,regression
+Lipophilicity,bm_scaffold,Global stack (9),0.5513261190220686,regression
+Lipophilicity,bm_scaffold,v3 router (7),0.5511531656810467,regression
+Lipophilicity,bm_scaffold,v4 full (9),0.5460870241503203,regression
+Lipophilicity,bm_scaffold,v4 full (7),0.5502176269962317,regression
+Lipophilicity,bm_scaffold,v4 w/o residual corr (9),0.5468194926567369,regression
+Lipophilicity,bm_scaffold,v4 w/o composite kernel (9),0.5441601912438426,regression
+Lipophilicity,bm_scaffold,v4 w/o novelty shrinkage (9),0.5522458369899786,regression
+Lipophilicity,butina_cluster,Global stack (7),0.6774173359832443,regression
+Lipophilicity,butina_cluster,Global stack (9),0.6774093557337061,regression
+Lipophilicity,butina_cluster,v3 router (7),0.6763213827333093,regression
+Lipophilicity,butina_cluster,v4 full (9),0.6816351214528547,regression
+Lipophilicity,butina_cluster,v4 full (7),0.6813230102783796,regression
+Lipophilicity,butina_cluster,v4 w/o residual corr (9),0.6817264498122643,regression
+Lipophilicity,butina_cluster,v4 w/o composite kernel (9),0.6748373845722317,regression
+Lipophilicity,butina_cluster,v4 w/o novelty shrinkage (9),0.6833568318606315,regression
+Lipophilicity,generic_scaffold,Global stack (7),0.576698726904264,regression
+Lipophilicity,generic_scaffold,Global stack (9),0.5767702297712756,regression
+Lipophilicity,generic_scaffold,v3 router (7),0.5793210923867268,regression
+Lipophilicity,generic_scaffold,v4 full (9),0.5759615289556531,regression
+Lipophilicity,generic_scaffold,v4 full (7),0.5757433834695969,regression
+Lipophilicity,generic_scaffold,v4 w/o residual corr (9),0.5798199490887446,regression
+Lipophilicity,generic_scaffold,v4 w/o composite kernel (9),0.5759615289556531,regression
+Lipophilicity,generic_scaffold,v4 w/o novelty shrinkage (9),0.5717338101134934,regression
+Lipophilicity,random,Global stack (7),0.5140985619358083,regression
+Lipophilicity,random,Global stack (9),0.5140843830965871,regression
+Lipophilicity,random,v3 router (7),0.5196625509346311,regression
+Lipophilicity,random,v4 full (9),0.5108285784214646,regression
+Lipophilicity,random,v4 full (7),0.5107680612764834,regression
+Lipophilicity,random,v4 w/o residual corr (9),0.5128531296398559,regression
+Lipophilicity,random,v4 w/o composite kernel (9),0.5108285784214646,regression
+Lipophilicity,random,v4 w/o novelty shrinkage (9),0.5116118850232075,regression

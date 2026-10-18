@@ -1,0 +1,541 @@
+Dataset,Model,Bin,nMAE,n
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.23886532,30
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.3327301,45
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.28717488,36
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.2521451,30
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.3570243,45
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.31479374,36
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.24287018,30
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.33845097,45
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.3093702,36
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.2428595,30
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.33841458,45
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.3098654,36
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.30697864,47
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.33133918,33
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.2799643,31
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.34418017,47
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.35032886,33
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.2816998,31
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.29247233,47
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.31397346,33
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.26253286,31
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.2924403,47
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.31396863,33
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.26254675,31
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.24549538,50
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.26845473,41
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.23807554,20
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.24452895,50
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.2940451,41
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.2562105,20
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.30533066,50
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.29816687,41
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.27104372,20
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.29957703,50
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.29700136,41
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.2663358,20
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.3296116,39
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.3607579,38
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.28890762,34
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.3093259,39
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.38367778,38
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.28339443,34
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.2834018,39
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.36603513,38
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.2922392,34
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.2835807,39
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.36139652,38
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.2918518,34
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.28258407,29
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.37080374,31
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.19681078,51
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.27728575,29
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.33233964,31
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.19244848,51
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.29097846,29
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.36196697,31
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.17305654,51
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.27015808,29
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.34586248,31
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.17992601,51
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.22440906,30
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.23863174,37
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.16614975,44
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.24232744,30
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.2532427,37
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.16387644,44
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.2662727,30
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.22786509,37
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.15409243,44
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.2640948,30
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.22951627,37
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.15519601,44
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.19789056,31
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.24228297,38
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.16296794,42
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.2056596,31
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.24040034,38
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.17729376,42
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.18299235,31
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.24962683,38
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.19089699,42
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.18187098,31
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.25711828,38
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.1916281,42
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.41132823,34
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.1952676,34
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.17012334,43
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.4147268,34
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.20716727,34
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.18679392,43
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.4151424,34
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.19848397,34
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.18086763,43
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.4067416,34
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.1905414,34
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.17853813,43
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.19573815,23
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.2765415,46
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.22782026,42
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.20942366,23
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.2953422,46
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.19037563,42
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.23232014,23
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.22578762,46
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.1546489,42
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.20965698,23
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.22955433,46
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.14407611,42
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.2517395,36
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.21134476,39
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.13582377,36
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.27126583,36
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.21674919,39
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.13009107,36
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.24941662,36
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.2004769,39
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.12240509,36
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.25014073,36
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.20081262,39
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.122483164,36
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.31171787,62
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.31936055,20
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.12509069,29
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.33310866,62
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.32131508,20
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.22211969,29
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.31224588,62
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.32893497,20
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.20434077,29
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.31122616,62
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.3307177,20
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.20294005,29
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.26531917,46
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.27888647,36
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.19955462,29
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.26769197,46
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.28181136,36
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.20889485,29
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.23879826,46
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.27192196,36
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.2031827,29
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.23875116,46
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.2718859,36
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.2036722,29
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.32519883,28
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.3743646,38
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.30900577,45
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.35086584,28
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.32581356,38
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.28570384,45
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.33830005,28
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.34007668,38
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.27404448,45
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.35617423,28
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.32543606,38
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.2781316,45
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.25056466,32
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.21537104,40
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.23564842,39
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.2821871,32
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.24677405,40
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.26239344,39
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.25378737,32
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.22668934,40
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.23448081,39
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.25065205,32
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.2329764,40
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.23883735,39
+ESOL,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.348526,36
+ESOL,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.28491342,44
+ESOL,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.24327421,31
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.33897626,36
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.30395475,44
+ESOL,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.26288414,31
+ESOL,Global stack (same cross-fitted experts),"[0.00,0.35)",0.37566286,36
+ESOL,Global stack (same cross-fitted experts),"[0.35,0.50)",0.2658475,44
+ESOL,Global stack (same cross-fitted experts),"[0.50,1.00)",0.25627288,31
+ESOL,SIG-Net v3 (Proposed),"[0.00,0.35)",0.37644446,36
+ESOL,SIG-Net v3 (Proposed),"[0.35,0.50)",0.26996052,44
+ESOL,SIG-Net v3 (Proposed),"[0.50,1.00)",0.24217539,31
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.44015154,26
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.17884168,19
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.14707524,19
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.37330252,26
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.20872337,19
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.14360347,19
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.35181916,26
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.15418798,19
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.11193189,19
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.35001305,26
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.15368791,19
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.112166025,19
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.500009,31
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.29421097,15
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.13437618,18
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.4249507,31
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.29841316,15
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.13633639,18
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.38245395,31
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.3221373,15
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.12958471,18
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.38189474,31
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.32129794,15
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.12905332,18
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.44259512,16
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.15662342,25
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.095447905,23
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.5018732,16
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.1907124,25
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.14223132,23
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.45338863,16
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.20569533,25
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.15289691,23
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.45933127,16
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.193172,25
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.14273548,23
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.36302084,28
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.27829573,22
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.2735668,14
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.40262946,28
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.23782176,22
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.23663986,14
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.39353177,28
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.20158292,22
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.19428515,14
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.39210173,28
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.1975889,22
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.18983684,14
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.3122368,37
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.28223413,19
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.20910117,8
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.31444624,37
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.25045478,19
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.18077175,8
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.31058836,37
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.2175148,19
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.1642403,8
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.2954093,37
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.25065303,19
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.18136783,8
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.2135196,17
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.20794429,23
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.1127801,24
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.23293248,17
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.22423379,23
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.10333624,24
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.23882443,17
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.20247114,23
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.12234545,24
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.2529455,17
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.20833333,23
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.10614699,24
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.2956134,17
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.19865492,17
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.065456085,30
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.29285637,17
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.18795735,17
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.11972318,30
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.31104225,17
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.15553047,17
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.10515995,30
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.27748433,17
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.19548047,17
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.09300757,30
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.3719436,15
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.09668263,24
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.09975789,25
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.324542,15
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.09632534,24
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.13002278,25
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.29243287,15
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.09323897,24
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.14011501,25
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.29873905,15
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.09895,24
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.13412675,25
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.148268,9
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.25459877,35
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.19991073,20
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.1752544,9
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.30585167,35
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.23811956,20
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.19175932,9
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.26188695,35
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.24400568,20
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.18195927,9
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.2436315,35
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.24978566,20
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.28014508,29
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.19529398,26
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.11278857,9
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.26662755,29
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.22426735,26
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.12344725,9
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.27230856,29
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.21631598,26
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.11564556,9
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.26004773,29
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.19411476,26
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.12362327,9
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.35033324,50
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.21934143,38
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.14837061,15
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.3424461,50
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.29447073,38
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.18853174,15
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.33073443,50
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.26443344,38
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.17115706,15
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.31782675,50
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.21976747,38
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.14264287,15
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.40220028,50
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.26106977,38
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.14755443,15
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.36073783,50
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.3089372,38
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.20807873,15
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.322466,50
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.25628567,38
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.16776378,15
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.3276115,50
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.21301736,38
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.16026221,15
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.3639742,50
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.23528874,38
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.16107,15
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.36663473,50
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.2839563,38
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.19317338,15
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.3510689,50
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.2536851,38
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.17329518,15
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.33555394,50
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.22127505,38
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.1510096,15
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.35918382,50
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.2526215,38
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.15617794,15
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.3587185,50
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.2918954,38
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.19144979,15
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.3520241,50
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.26304302,38
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.17291166,15
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.3344321,50
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.22082396,38
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.14989461,15
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.36484337,50
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.22111002,38
+FreeSolv,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.1709533,15
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.36519787,50
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.30008626,38
+FreeSolv,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.17329906,15
+FreeSolv,Global stack (same cross-fitted experts),"[0.00,0.35)",0.34386364,50
+FreeSolv,Global stack (same cross-fitted experts),"[0.35,0.50)",0.24892089,38
+FreeSolv,Global stack (same cross-fitted experts),"[0.50,1.00)",0.1724313,15
+FreeSolv,SIG-Net v3 (Proposed),"[0.00,0.35)",0.34122795,50
+FreeSolv,SIG-Net v3 (Proposed),"[0.35,0.50)",0.23910089,38
+FreeSolv,SIG-Net v3 (Proposed),"[0.50,1.00)",0.1585149,15
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.5009496,87
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.45285794,97
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.3702096,236
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.5226433,87
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.4502659,97
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.36969027,236
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.43915668,87
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.43441245,97
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.32031107,236
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.43970203,87
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.43778253,97
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.32991526,236
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.6225236,66
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.42689705,78
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.3199594,276
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.6097392,66
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.44764885,78
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.34043786,276
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.53369576,66
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.42456704,78
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.29947788,276
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.55529106,66
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.40981707,78
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.3071192,276
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.53781503,56
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.5285561,89
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.35758752,275
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.5853289,56
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.51680017,89
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.33803615,275
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.46708393,56
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.46471944,89
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.33020303,275
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.47085503,56
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.46829313,89
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.33189842,275
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.5059315,83
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.4675691,87
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.32212055,250
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.56114674,83
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.4791674,87
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.32769322,250
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.45740223,83
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.4025186,87
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.29044947,250
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.45740223,83
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.4025186,87
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.29044947,250
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.51772296,64
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.428859,106
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.32871374,250
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.51397645,64
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.43533337,106
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.32692072,250
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.45975918,64
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.3804708,106
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.28924084,250
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.46587482,64
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.3823742,106
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.29280874,250
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.55075455,222
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.45813698,146
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.44148356,52
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.5866259,222
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.45699704,146
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.41333172,52
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.48463657,222
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.40780094,146
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.38109434,52
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.48463908,222
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.40788597,146
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.381285,52
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.48332992,147
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.441646,174
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.41499385,99
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.5003438,147
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.445968,174
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.42548913,99
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.46735922,147
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.4486888,174
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.38228697,99
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.46351436,147
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.4524843,174
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.3735348,99
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.53999776,254
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.45641547,119
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.31802258,47
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.55613047,254
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.47268683,119
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.35859716,47
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.51870465,254
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.4423867,119
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.3192196,47
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.507963,254
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.44131115,119
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.31813967,47
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.39220494,160
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.5369791,163
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.4993265,97
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.41250557,160
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.53143996,163
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.53192574,97
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.3699985,160
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.44564423,163
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.42294252,97
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.3699985,160
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.44564423,163
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.42294252,97
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.47786623,177
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.4883124,155
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.56729805,88
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.4670643,177
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.46656194,155
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.50445706,88
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.45009264,177
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.41327554,155
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.45189038,88
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.44999048,177
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.41343984,155
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.45120963,88
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.65102017,62
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.5047318,110
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.41062778,248
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.6363128,62
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.5525338,110
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.41310444,248
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.5638618,62
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.5193006,110
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.3847836,248
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.5645205,62
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.5187854,110
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.38357177,248
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.5481184,75
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.49142483,103
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.34836143,242
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.54749054,75
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.49267802,103
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.3510103,242
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.4998246,75
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.46902776,103
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.32390273,242
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.49875805,75
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.46889222,103
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.32499236,242
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.5326112,94
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.3974223,77
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.29737535,249
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.5307867,94
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.39895645,77
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.32756892,249
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.48173633,94
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.38574618,77
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.29137132,249
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.48646826,94
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.38648406,77
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.2941417,249
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.5174122,83
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.5095721,124
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.40822297,213
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.53366315,83
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.54069597,124
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.41734493,213
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.43794346,83
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.45918214,124
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.35329017,213
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.43794346,83
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.45918214,124
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.35329017,213
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.00,0.35)",0.61363274,57
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.35,0.50)",0.39861038,103
+Lipophilicity,Stacked (XGBoost + D-MPNN),"[0.50,1.00)",0.36177954,260
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.00,0.35)",0.6595556,57
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.35,0.50)",0.38260904,103
+Lipophilicity,D-MPNN + RDKit-2D [5-fold bagged],"[0.50,1.00)",0.34446028,260
+Lipophilicity,Global stack (same cross-fitted experts),"[0.00,0.35)",0.56124693,57
+Lipophilicity,Global stack (same cross-fitted experts),"[0.35,0.50)",0.3449806,103
+Lipophilicity,Global stack (same cross-fitted experts),"[0.50,1.00)",0.32171017,260
+Lipophilicity,SIG-Net v3 (Proposed),"[0.00,0.35)",0.58465415,57
+Lipophilicity,SIG-Net v3 (Proposed),"[0.35,0.50)",0.36402628,103
+Lipophilicity,SIG-Net v3 (Proposed),"[0.50,1.00)",0.31421873,260

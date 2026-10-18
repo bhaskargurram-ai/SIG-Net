@@ -1,0 +1,12 @@
+# data bundle is distributed as a release asset (135 MB > GitHub file limit)
+data/
+__pycache__/
+*.pyc
+# LaTeX build artifacts
+manuscript/*.aux
+manuscript/*.log
+manuscript/*.blg
+manuscript/*.out
+manuscript/*.out.log
+manuscript/acs-*.bib
+manuscript/*.pre_v4

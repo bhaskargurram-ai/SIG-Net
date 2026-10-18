@@ -1,0 +1,260 @@
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{28}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[Bemis and Murcko(1996)Bemis, and Murcko]{bemis1996properties}
+Bemis,~G.~W.; Murcko,~M.~A. The Properties of Known Drugs. 1. Molecular
+  Frameworks. \emph{J. Med. Chem.} \textbf{1996}, \emph{39}, 2887--2893\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wu \latin{et~al.}(2018)Wu, Ramsundar, Feinberg, Gomes, Geniesse,
+  Pappu, Leswing, and Pande]{wu2018moleculenet}
+Wu,~Z.; Ramsundar,~B.; Feinberg,~E.~N.; Gomes,~J.; Geniesse,~C.; Pappu,~A.~S.;
+  Leswing,~K.; Pande,~V. MoleculeNet: A Benchmark for Molecular Machine
+  Learning. \emph{Chem. Sci.} \textbf{2018}, \emph{9}, 513--530\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fooladi \latin{et~al.}(2025)Fooladi, Vu, Mathea, and
+  Kirchmair]{fooladi2025evaluating}
+Fooladi,~H.; Vu,~T. N.~L.; Mathea,~M.; Kirchmair,~J. Evaluating Machine
+  Learning Models for Molecular Property Prediction: Performance and Robustness
+  on Out-of-Distribution Data. \emph{J. Chem. Inf. Model.} \textbf{2025},
+  \emph{65}, 9871--9886\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Reimer \latin{et~al.}(2026)Reimer, Do, and Green]{reimer2025chemspace}
+Reimer,~B.~M.; Do,~V.; Green,~A.~G. Chemical Space Separation: Scaffold and
+  {UMAP} Splits Are Closer to Random than We Think. ChemRxiv preprint,
+  2026\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Zheng \latin{et~al.}(2026)Zheng, Guo, Wang, Liu, and
+  Chen]{zheng2026frontier}
+Zheng,~J.; Guo,~C.; Wang,~Z.; Liu,~X.; Chen,~H. Beyond Scaffold Splits:
+  Structural-Frontier Evaluation Reveals Hidden Failures in {ADMET} Models.
+  arXiv preprint arXiv:2607.10729, 2026\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Antoniuk \latin{et~al.}(2025)Antoniuk, Zaman, Ben-Nun, Li,
+  Diffenderfer, Sahin, Smolenski, Grethel, Hsu, Hiszpanski, Chiu, Kailkhura,
+  and Van~Essen]{boom2025}
+Antoniuk,~E.~R.; Zaman,~S.; Ben-Nun,~T.; Li,~P.; Diffenderfer,~J.; Sahin,~B.;
+  Smolenski,~O.~H.; Grethel,~E.; Hsu,~T.; Hiszpanski,~A.; Chiu,~K.;
+  Kailkhura,~B.; Van~Essen,~B. {BOOM}: Benchmarking Out-of-Distribution
+  Molecular Property Predictions of Machine Learning Models. Advances in Neural
+  Information Processing Systems (Datasets and Benchmarks Track). 2025;
+  arXiv:2505.01912\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Yang \latin{et~al.}(2019)Yang, Swanson, Jin, Coley, Eiden, Gao,
+  Guzman-Perez, Hopper, Kelley, Mathea, Palmer, Settels, Jaakkola, Jensen, and
+  Barzilay]{yang2019analyzing}
+Yang,~K.; Swanson,~K.; Jin,~W.; Coley,~C.; Eiden,~P.; Gao,~H.;
+  Guzman-Perez,~A.; Hopper,~T.; Kelley,~B.; Mathea,~M.; Palmer,~A.;
+  Settels,~V.; Jaakkola,~T.; Jensen,~K.; Barzilay,~R. Analyzing Learned
+  Molecular Representations for Property Prediction. \emph{J. Chem. Inf.
+  Model.} \textbf{2019}, \emph{59}, 3370--3388\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Heid \latin{et~al.}(2024)Heid, Greenman, Chung, Li, Graff, Vermeire,
+  Wu, Green, and McGill]{heid2024chemprop}
+Heid,~E.; Greenman,~K.~P.; Chung,~Y.; Li,~S.-C.; Graff,~D.~E.; Vermeire,~F.~H.;
+  Wu,~H.; Green,~W.~H.; McGill,~C.~J. Chemprop: A Machine Learning Package for
+  Chemical Property Prediction. \emph{J. Chem. Inf. Model.} \textbf{2024},
+  \emph{64}, 9--17\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sun and Saenko(2016)Sun, and Saenko]{sun2016deep}
+Sun,~B.; Saenko,~K. Deep {CORAL}: Correlation Alignment for Deep Domain
+  Adaptation. Computer Vision -- ECCV 2016 Workshops. 2016; pp 443--450\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wolpert(1992)]{wolpert1992stacked}
+Wolpert,~D.~H. Stacked Generalization. \emph{Neural Networks} \textbf{1992},
+  \emph{5}, 241--259\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jacobs \latin{et~al.}(1991)Jacobs, Jordan, Nowlan, and
+  Hinton]{jacobs1991adaptive}
+Jacobs,~R.~A.; Jordan,~M.~I.; Nowlan,~S.~J.; Hinton,~G.~E. Adaptive Mixtures of
+  Local Experts. \emph{Neural Comput.} \textbf{1991}, \emph{3}, 79--87\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mobley and Guthrie(2014)Mobley, and Guthrie]{mobley2014freesolv}
+Mobley,~D.~L.; Guthrie,~J.~P. {FreeSolv}: A Database of Experimental and
+  Calculated Hydration Free Energies, with Input Files. \emph{J. Comput.-Aided
+  Mol. Des.} \textbf{2014}, \emph{28}, 711--720\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Delaney(2004)]{delaney2004esol}
+Delaney,~J.~S. {ESOL}: Estimating Aqueous Solubility Directly from Molecular
+  Structure. \emph{J. Chem. Inf. Comput. Sci.} \textbf{2004}, \emph{44},
+  1000--1005\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Subramanian \latin{et~al.}(2016)Subramanian, Ramsundar, Pande, and
+  Denny]{subramanian2016bace}
+Subramanian,~G.; Ramsundar,~B.; Pande,~V.; Denny,~R.~A. Computational Modeling
+  of $\beta$-Secretase 1 ({BACE-1}) Inhibitors Using Ligand Based Approaches.
+  \emph{J. Chem. Inf. Model.} \textbf{2016}, \emph{56}, 1936--1949\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Martins \latin{et~al.}(2012)Martins, Teixeira, Pinheiro, and
+  Falcao]{martins2012bbbp}
+Martins,~I.~F.; Teixeira,~A.~L.; Pinheiro,~L.; Falcao,~A.~O. A {B}ayesian
+  Approach to in Silico Blood-Brain Barrier Penetration Modeling. \emph{J.
+  Chem. Inf. Model.} \textbf{2012}, \emph{52}, 1686--1697\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Landrum \latin{et~al.}()Landrum, \latin{et~al.} others]{rdkit}
+Landrum,~G.; others {RDKit}: Open-Source Cheminformatics.
+  \url{https://www.rdkit.org}, Version 2026.03\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Butina(1999)]{butina1999unsupervised}
+Butina,~D. Unsupervised Data Base Clustering Based on Daylight's Fingerprint
+  and Tanimoto Similarity: A Fast and Automated Way To Cluster Small and Large
+  Data Sets. \emph{J. Chem. Inf. Comput. Sci.} \textbf{1999}, \emph{39},
+  747--750\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rogers and Hahn(2010)Rogers, and Hahn]{rogers2010extended}
+Rogers,~D.; Hahn,~M. Extended-Connectivity Fingerprints. \emph{J. Chem. Inf.
+  Model.} \textbf{2010}, \emph{50}, 742--754\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Durant \latin{et~al.}(2002)Durant, Leland, Henry, and
+  Nourse]{durant2002reoptimization}
+Durant,~J.~L.; Leland,~B.~A.; Henry,~D.~R.; Nourse,~J.~G. Reoptimization of
+  {MDL} Keys for Use in Drug Discovery. \emph{J. Chem. Inf. Comput. Sci.}
+  \textbf{2002}, \emph{42}, 1273--1280\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kipf and Welling(2017)Kipf, and Welling]{kipf2017semi}
+Kipf,~T.~N.; Welling,~M. Semi-Supervised Classification with Graph
+  Convolutional Networks. International Conference on Learning Representations.
+  2017\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Xu \latin{et~al.}(2019)Xu, Hu, Leskovec, and Jegelka]{xu2019powerful}
+Xu,~K.; Hu,~W.; Leskovec,~J.; Jegelka,~S. How Powerful Are Graph Neural
+  Networks? International Conference on Learning Representations. 2019\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Brody \latin{et~al.}(2022)Brody, Alon, and Yahav]{brody2022attentive}
+Brody,~S.; Alon,~U.; Yahav,~E. How Attentive Are Graph Attention Networks?
+  International Conference on Learning Representations. 2022\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Xiong \latin{et~al.}(2020)Xiong, Wang, Liu, Zhong, Wan, Li, Li, Luo,
+  Chen, Jiang, and Zheng]{xiong2020pushing}
+Xiong,~Z.; Wang,~D.; Liu,~X.; Zhong,~F.; Wan,~X.; Li,~X.; Li,~Z.; Luo,~X.;
+  Chen,~K.; Jiang,~H.; Zheng,~M. Pushing the Boundaries of Molecular
+  Representation for Drug Discovery with the Graph Attention Mechanism.
+  \emph{J. Med. Chem.} \textbf{2020}, \emph{63}, 8749--8760\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lakshminarayanan \latin{et~al.}(2017)Lakshminarayanan, Pritzel, and
+  Blundell]{lakshminarayanan2017simple}
+Lakshminarayanan,~B.; Pritzel,~A.; Blundell,~C. Simple and Scalable Predictive
+  Uncertainty Estimation using Deep Ensembles. \emph{Advances in Neural
+  Information Processing Systems} \textbf{2017}, \emph{30}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ahmad \latin{et~al.}(2022)Ahmad, Simon, Chithrananda, Grand, and
+  Ramsundar]{ahmad2022chemberta2}
+Ahmad,~W.; Simon,~E.; Chithrananda,~S.; Grand,~G.; Ramsundar,~B. {ChemBERTa-2}:
+  Towards Chemical Foundation Models. arXiv preprint arXiv:2209.01712,
+  2022\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dem\v{s}ar(2006)]{demsar2006statistical}
+Dem\v{s}ar,~J. Statistical Comparisons of Classifiers over Multiple Data Sets.
+  \emph{J. Mach. Learn. Res.} \textbf{2006}, \emph{7}, 1--30\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sheridan(2013)]{sheridan2013timesplit}
+Sheridan,~R.~P. Time-Split Cross-Validation as a Method for Estimating the
+  Goodness of Prospective Prediction. \emph{J. Chem. Inf. Model.}
+  \textbf{2013}, \emph{53}, 783--790\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

@@ -1,0 +1,4 @@
+results/frozen_code/* -text
+results/v4_freeze_hashes.txt -text
+*.pkl binary
+*.npy binary

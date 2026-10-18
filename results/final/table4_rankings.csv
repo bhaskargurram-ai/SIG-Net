@@ -1,0 +1,32 @@
+Name,Model,Overall_Rank,First,Top3,N_settings,OOD_Rank
+SIG-Net,SIG-Net v3 (Proposed),2.6,12,14,20,2.8666666666666667
+Two-expert novelty gate,SIG-Net v2 (Proposed),5.2,1,7,20,5.8
+Two-expert gate (single D-MPNN),SIG-Net v2 w/o ensemble,5.5,3,6,20,5.933333333333334
+Stack: D-MPNN ens. + anchor,"Stacked (Ensemble + Anchor, global w)",7.5,0,3,20,8.2
+Stack: XGBoost + D-MPNN,Stacked (XGBoost + D-MPNN),9.65,0,3,20,10.266666666666667
+Multi-view anchor (5-fold bagged),Anchor (Multi-View Stack) [5-fold bagged],11.375,0,2,20,11.733333333333333
+Multi-view anchor,Anchor-Only (Multi-View Stack),11.625,0,1,20,12.066666666666666
+D-MPNN + Deep CORAL [5-fold bagged],D-MPNN + Deep CORAL [5-fold bagged],11.65,0,1,20,12.0
+D-MPNN + RDKit-2D [5-fold bagged],D-MPNN + RDKit-2D [5-fold bagged],11.9,0,1,20,12.733333333333333
+Dual-stream gated residual,Dual-Stream Gated Residual (v1 design),12.25,0,1,20,12.866666666666667
+D-MPNN + RDKit-2D Ensemble (3x),D-MPNN + RDKit-2D Ensemble (3x),13.35,0,0,20,13.533333333333333
+D-MPNN + RDKit-2D,D-MPNN + RDKit-2D,14.2,0,1,20,14.266666666666667
+D-MPNN + Deep CORAL,D-MPNN + Deep CORAL,14.3,1,1,20,14.333333333333334
+AttentiveFP [5-fold bagged],AttentiveFP [5-fold bagged],14.85,0,5,20,14.333333333333334
+HighwayMLP (ECFP4 + RDKit-2D),HighwayMLP (ECFP4 + RDKit-2D),16.4,0,1,20,16.333333333333332
+GINE [5-fold bagged],GINE [5-fold bagged],16.55,0,2,20,15.666666666666666
+XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],16.7,0,1,20,16.133333333333333
+XGBoost (ECFP4 + RDKit-2D),XGBoost (ECFP4 + RDKit-2D),18.05,0,0,20,18.0
+GINE,GINE,18.3,0,2,20,17.6
+D-MPNN (Chemprop),D-MPNN (Chemprop),18.45,0,2,20,18.533333333333335
+AttentiveFP,AttentiveFP,18.5,0,0,20,17.8
+XGBoost (RDKit-2D),XGBoost (RDKit-2D),19.1,0,0,20,18.666666666666668
+RF (RDKit-2D) [5-fold bagged],RF (RDKit-2D) [5-fold bagged],19.7,0,0,20,19.4
+RF (RDKit-2D),RF (RDKit-2D),19.9,0,1,20,19.066666666666666
+GCN,GCN,21.1,1,1,20,21.133333333333333
+GATv2,GATv2,22.3,0,0,20,21.866666666666667
+RF (MACCS-167),RF (MACCS-167),23.1,0,1,20,22.933333333333334
+ChemBERTa-2 (77M-MTR) + XGBoost,ChemBERTa-2 (77M-MTR) + XGBoost,23.5,2,2,20,22.133333333333333
+ChemBERTa-2 (77M-MTR) + linear,ChemBERTa-2 (77M-MTR) + linear,25.55,0,0,20,25.466666666666665
+RF (ECFP4-2048),RF (ECFP4-2048),25.8,0,0,20,26.2
+XGBoost (ECFP4-2048),XGBoost (ECFP4-2048),27.05,0,0,20,28.133333333333333

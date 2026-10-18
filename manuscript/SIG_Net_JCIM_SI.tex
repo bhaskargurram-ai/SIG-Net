@@ -1,0 +1,251 @@
+\documentclass[11pt]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage{amsmath,booktabs,longtable,graphicx,pdflscape}
+\renewcommand{\thetable}{S\arabic{table}}
+\begin{document}
+\begin{center}{\Large\bfseries Supporting Information}\\[4pt]
+SIG-Net: Similarity-Informed Local-Competence Mixtures of Cross-Fitted Experts for Molecular Property Prediction under Leakage-Audited Out-of-Distribution Splits\end{center}
+
+\section*{S1. Pre-specified analysis plan}
+The analysis plan below was written after the final SIG-Net run was launched and before any of its test-set results were inspected. The SIG-Net design was fixed using validation scores on three development folds.
+\begin{verbatim}
+# Pre-specified analysis plan for SIG-Net v3
+
+Written 2026-10-17 ~23:35 local time, after the v3 RunPod run was launched and **before any v3 test-set result was viewed**.
+The v3 design (experts, cross-fitting K=5, grid for k/tau/gamma) was fixed using validation scores on three development
+folds (FreeSolv bm_scaffold s42, ESOL bm_scaffold s42, ESOL butina_cluster s42); no test scores were inspected during design.
+
+## Data
+- 4 datasets x 4 split protocols x 5 seeds = 80 folds; identical splits/fold preparation for v2 and v3 runs.
+- v2 results (`results/folds/`) and v3 results (`results/folds_v3/`) are merged per fold.
+
+## Primary endpoint
+- SIG-Net v3 (Proposed) vs. the strongest non-v3 comparator, defined as the non-v3 model with the best average rank
+  across the 16 settings. Test: two-sided Wilcoxon signed-rank test on per-fold relative improvement over all 80 folds.
+  Also reported: number of settings where v3 has the better 5-seed mean.
+
+## Secondary endpoints
+1. v3 vs. "Global stack (same cross-fitted experts)" -- isolates the contribution of local competence + novelty shrinkage.
+2. v3 vs. each bagged expert and each v2-run baseline (same Wilcoxon procedure, 80 folds).
+3. Average rank over all models (Friedman test, Nemenyi CD).
+4. Error stratified by nearest-neighbour Tanimoto similarity (OOD folds, regression datasets).
+
+## Reporting rules
+- All 16 settings reported, including those where v3 is not best.
+- No post-hoc removal of datasets, splits, seeds or baselines.
+- FreeSolv generic_scaffold has a single distinct test set across seeds; it is reported but flagged.
+- If v3 does not beat the strongest comparator on the primary endpoint, this is stated as the result.
+
+## Addendum (2026-10-18 ~00:55, written before any BBBP or ChemBERTa-2 result was viewed)
+Following external review of the draft, two extensions were added. The SIG-Net design (experts, K, grids) is unchanged.
+1. **BBBP** (MoleculeNet blood-brain barrier penetration, classification) is added as a fifth dataset, curated and split
+   with the identical Phase 1 code (4 protocols x 5 seeds). All models, including SIG-Net, are run on its 20 folds.
+2. **Pretrained foundation-model baselines:** frozen ChemBERTa-2 (DeepChem/ChemBERTa-77M-MTR) mean-pooled embeddings with
+   (a) a ridge/logistic head and (b) an XGBoost head, both selected on the validation fold, on all 100 folds.
+   ChemBERTa-2 is a comparison model only; it is not added as a SIG-Net expert (that would change the design post hoc).
+Reporting: the main text reports all 5 datasets (100 folds). The pre-specified 80-fold primary endpoint (4 original
+datasets, original comparator set) is reported unchanged alongside it. No other analysis changes.
+
+## Addendum 2 -- SIG-Net v4 study (2026-10-18 ~09:40, before any confirmatory result was computed)
+**Motivation:** reviewer request to simplify or justify the novelty exponent and to strengthen the local router.
+**Splits:** fresh seeds generated with the identical splitting code. Development seed **11** (all 20 settings) may be used
+for design decisions, including its test folds. Confirmatory seeds **1, 2, 3** (60 folds) are not inspected until the design
+is frozen. FreeSolv generic_scaffold yields the same test set for every seed, so it is **excluded from the confirmatory
+endpoint** (reported separately).
+**Experts:** 9 cross-fitted experts (the 7 of v3 + ChemBERTa-2/XGBoost + XGBoost/ECFP4); all OOF/val/test matrices saved.
+**Candidate routers (development):** v4 (local error-covariance routing with novelty shrinkage toward the global
+covariance, composite ECFP/MACCS/physchem kernel, novelty-damped local residual correction), on 7 or 9 experts; v3 router;
+global stacks; and v4 ablations.
+**Design-selection rule (fixed now, before the remaining development folds arrived):** the v4 variant with the highest mean
+per-fold relative improvement over the 7-expert global stack across the 20 seed-11 folds is chosen (ties: more wins).
+**Confirmatory primary endpoint:** chosen v4 vs the 7-expert global stack over the 56 confirmatory folds (60 minus FreeSolv
+generic), two-sided Wilcoxon signed-rank test on per-fold relative improvement. **Secondary:** v4 vs v3 router; v4 vs
+9-expert global stack; v4 ablations (no residual correction, no composite kernel, no novelty shrinkage).
+**Reporting:** whatever the confirmatory result is, it is reported; the v3 paper results are unchanged.
+
+### Design freeze (2026-10-18 09:54, before any confirmatory result was computed)
+Applying the rule above to the 20 development folds (file results/dev_v4_seed11_FROZEN.csv): **v4 full (9 experts)** has the
+highest mean improvement over the 7-expert global stack (+0.68%, median +0.51%, 14/20 wins) and is frozen as **SIG-Net v4**:
+9 experts; grid k in {10,25,50}, a in {0.5,0.75,1.0}, gamma in {0,0.5,1,2,4,global}, nu in {0,0.25,0.5,0.75},
+gamma_d in {1,2}, rho = 0.05; all selected per fold on the validation fold. Ablations are those listed above.
+
+\end{verbatim}
+
+\section*{S2. Full benchmark}
+\begin{landscape}{\tiny\setlength{\tabcolsep}{1.5pt}
+\begin{longtable}{lcccccccccccccccccccc}
+\caption{Mean test metric over five seeds for every model (RMSE for FreeSolv/ESOL/Lipophilicity, ROC-AUC for BACE/BBBP). R: random, BM: Bemis--Murcko scaffold, G: generic skeleton, Bu: Butina cluster.}\\
+\toprule
+Model & Free-R & Free-BM & Free-G & Free-Bu & ESOL-R & ESOL-BM & ESOL-G & ESOL-Bu & Lipo-R & Lipo-BM & Lipo-G & Lipo-Bu & BACE-R & BACE-BM & BACE-G & BACE-Bu & BBBP-R & BBBP-BM & BBBP-G & BBBP-Bu \\
+\midrule
+Anchor (Multi-View Stack) [5-fold bagged] & 0.964 & 1.870 & 1.430 & 1.083 & 0.545 & 0.767 & 0.753 & 0.577 & 0.594 & 0.687 & 0.688 & 0.791 & 0.901 & 0.855 & 0.798 & 0.763 & 0.931 & 0.937 & 0.950 & 0.887 \\
+Anchor-Only (Multi-View Stack) & 0.939 & 1.870 & 1.430 & 1.083 & 0.545 & 0.767 & 0.753 & 0.577 & 0.595 & 0.687 & 0.688 & 0.791 & 0.902 & 0.855 & 0.798 & 0.763 & 0.931 & 0.937 & 0.950 & 0.887 \\
+AttentiveFP & 0.983 & 2.030 & 1.363 & 1.097 & 0.570 & 0.849 & 0.807 & 0.602 & 0.545 & 0.614 & 0.634 & 0.724 & 0.872 & 0.836 & 0.806 & 0.704 & 0.892 & 0.898 & 0.923 & 0.818 \\
+AttentiveFP [5-fold bagged] & 0.898 & 1.910 & 1.348 & 1.167 & 0.585 & 0.810 & 0.771 & 0.614 & 0.528 & 0.584 & 0.605 & 0.687 & 0.881 & 0.856 & 0.781 & 0.772 & 0.901 & 0.901 & 0.932 & 0.834 \\
+ChemBERTa-2 (77M-MTR) + XGBoost & 2.009 & 3.026 & 2.569 & 1.786 & 0.847 & 1.128 & 0.994 & 0.839 & 0.743 & 0.873 & 0.860 & 0.964 & 0.868 & 0.838 & 0.819 & 0.800 & 0.907 & 0.914 & 0.936 & 0.858 \\
+ChemBERTa-2 (77M-MTR) + linear & 1.386 & 2.309 & 1.809 & 1.397 & 0.793 & 1.038 & 1.289 & 0.839 & 0.768 & 0.892 & 0.842 & 0.976 & 0.885 & 0.840 & 0.799 & 0.730 & 0.876 & 0.895 & 0.932 & 0.841 \\
+D-MPNN (Chemprop) & 1.111 & 1.823 & 1.337 & 1.219 & 0.652 & 0.861 & 0.890 & 0.641 & 0.527 & 0.646 & 0.636 & 0.717 & 0.887 & 0.840 & 0.731 & 0.745 & 0.906 & 0.929 & 0.912 & 0.821 \\
+D-MPNN + Deep CORAL & 0.871 & 1.714 & 1.526 & 1.079 & 0.556 & 0.775 & 0.743 & 0.567 & 0.547 & 0.660 & 0.671 & 0.766 & 0.879 & 0.832 & 0.807 & 0.780 & 0.925 & 0.914 & 0.931 & 0.856 \\
+D-MPNN + Deep CORAL [5-fold bagged] & 0.878 & 1.821 & 1.558 & 1.135 & 0.533 & 0.756 & 0.728 & 0.552 & 0.541 & 0.651 & 0.645 & 0.739 & 0.881 & 0.843 & 0.812 & 0.795 & 0.926 & 0.915 & 0.935 & 0.855 \\
+D-MPNN + RDKit-2D & 0.871 & 1.723 & 1.525 & 1.089 & 0.557 & 0.777 & 0.736 & 0.568 & 0.544 & 0.665 & 0.670 & 0.764 & 0.879 & 0.830 & 0.812 & 0.781 & 0.926 & 0.916 & 0.927 & 0.856 \\
+D-MPNN + RDKit-2D Ensemble (3x) & 0.873 & 1.759 & 1.537 & 1.107 & 0.536 & 0.773 & 0.748 & 0.560 & 0.540 & 0.653 & 0.660 & 0.747 & 0.879 & 0.837 & 0.813 & 0.782 & 0.925 & 0.921 & 0.927 & 0.853 \\
+D-MPNN + RDKit-2D [5-fold bagged] & 0.870 & 1.795 & 1.556 & 1.115 & 0.536 & 0.762 & 0.730 & 0.565 & 0.542 & 0.648 & 0.649 & 0.744 & 0.883 & 0.840 & 0.816 & 0.782 & 0.926 & 0.914 & 0.934 & 0.848 \\
+Dual-Stream Gated Residual (v1 design) & 0.980 & 1.792 & 1.432 & 1.114 & 0.542 & 0.799 & 0.760 & 0.566 & 0.571 & 0.680 & 0.665 & 0.791 & 0.900 & 0.855 & 0.799 & 0.758 & 0.932 & 0.939 & 0.944 & 0.879 \\
+GATv2 & 1.234 & 1.976 & 1.395 & 1.346 & 0.567 & 0.861 & 0.803 & 0.624 & 0.574 & 0.628 & 0.662 & 0.763 & 0.853 & 0.823 & 0.701 & 0.681 & 0.892 & 0.902 & 0.906 & 0.823 \\
+GCN & 1.011 & 2.160 & 1.279 & 1.237 & 0.583 & 0.853 & 0.742 & 0.607 & 0.616 & 0.683 & 0.706 & 0.788 & 0.813 & 0.776 & 0.689 & 0.714 & 0.926 & 0.915 & 0.923 & 0.846 \\
+GINE & 0.996 & 2.014 & 1.335 & 1.216 & 0.560 & 0.774 & 0.756 & 0.579 & 0.556 & 0.628 & 0.638 & 0.714 & 0.764 & 0.794 & 0.703 & 0.615 & 0.912 & 0.918 & 0.924 & 0.822 \\
+GINE [5-fold bagged] & 0.978 & 1.996 & 1.381 & 1.238 & 0.563 & 0.819 & 0.740 & 0.593 & 0.557 & 0.610 & 0.632 & 0.722 & 0.862 & 0.831 & 0.716 & 0.720 & 0.916 & 0.921 & 0.938 & 0.844 \\
+Global stack (same cross-fitted experts) & 0.822 & 1.719 & 1.465 & 1.081 & 0.516 & 0.763 & 0.696 & 0.544 & 0.506 & 0.576 & 0.590 & 0.670 & 0.901 & 0.863 & 0.810 & 0.767 & 0.935 & 0.939 & 0.952 & 0.881 \\
+HighwayMLP (ECFP4 + RDKit-2D) & 0.971 & 1.812 & 1.565 & 1.064 & 0.561 & 0.821 & 0.771 & 0.609 & 0.575 & 0.655 & 0.679 & 0.745 & 0.888 & 0.852 & 0.782 & 0.767 & 0.914 & 0.917 & 0.932 & 0.841 \\
+RF (ECFP4-2048) & 2.309 & 3.765 & 2.818 & 2.261 & 1.241 & 1.654 & 1.639 & 1.295 & 0.886 & 0.982 & 0.930 & 1.032 & 0.893 & 0.844 & 0.783 & 0.780 & 0.918 & 0.904 & 0.934 & 0.834 \\
+RF (MACCS-167) & 1.141 & 1.905 & 1.690 & 1.389 & 1.058 & 1.334 & 1.359 & 1.002 & 0.800 & 0.918 & 0.896 & 0.958 & 0.880 & 0.830 & 0.772 & 0.734 & 0.926 & 0.930 & 0.943 & 0.888 \\
+RF (RDKit-2D) & 1.148 & 2.349 & 1.878 & 1.324 & 0.623 & 0.835 & 0.832 & 0.645 & 0.668 & 0.765 & 0.771 & 0.879 & 0.880 & 0.846 & 0.790 & 0.793 & 0.925 & 0.932 & 0.948 & 0.874 \\
+RF (RDKit-2D) [5-fold bagged] & 1.283 & 2.452 & 1.842 & 1.379 & 0.641 & 0.840 & 0.816 & 0.653 & 0.675 & 0.767 & 0.772 & 0.880 & 0.883 & 0.847 & 0.794 & 0.790 & 0.927 & 0.932 & 0.949 & 0.871 \\
+SIG-Net v2 (Proposed) & 0.868 & 1.753 & 1.415 & 1.074 & 0.515 & 0.751 & 0.734 & 0.549 & 0.530 & 0.636 & 0.633 & 0.730 & 0.901 & 0.853 & 0.818 & 0.765 & 0.933 & 0.940 & 0.944 & 0.888 \\
+SIG-Net v2 w/o ensemble & 0.878 & 1.743 & 1.397 & 1.065 & 0.523 & 0.746 & 0.722 & 0.554 & 0.530 & 0.641 & 0.635 & 0.733 & 0.902 & 0.854 & 0.817 & 0.765 & 0.934 & 0.938 & 0.946 & 0.888 \\
+SIG-Net v3 (Proposed) & 0.800 & 1.720 & 1.405 & 1.038 & 0.511 & 0.754 & 0.704 & 0.544 & 0.505 & 0.580 & 0.589 & 0.668 & 0.900 & 0.864 & 0.815 & 0.790 & 0.940 & 0.940 & 0.954 & 0.887 \\
+SIG-Net v3 w/o novelty shrinkage & 0.797 & 1.687 & 1.415 & 1.038 & 0.512 & 0.741 & 0.703 & 0.544 & 0.509 & 0.592 & 0.596 & 0.675 & 0.901 & 0.863 & 0.818 & 0.790 & 0.939 & 0.940 & 0.954 & 0.886 \\
+Stacked (Ensemble + Anchor, global w) & 0.875 & 1.783 & 1.427 & 1.094 & 0.515 & 0.752 & 0.734 & 0.550 & 0.533 & 0.636 & 0.634 & 0.730 & 0.899 & 0.848 & 0.816 & 0.760 & 0.934 & 0.938 & 0.941 & 0.876 \\
+Stacked (XGBoost + D-MPNN) & 0.884 & 1.880 & 1.474 & 1.057 & 0.532 & 0.751 & 0.717 & 0.563 & 0.531 & 0.637 & 0.636 & 0.735 & 0.892 & 0.841 & 0.807 & 0.762 & 0.931 & 0.935 & 0.936 & 0.856 \\
+XGBoost (ECFP4 + RDKit-2D) & 1.066 & 2.464 & 1.773 & 1.157 & 0.597 & 0.788 & 0.787 & 0.594 & 0.597 & 0.693 & 0.698 & 0.809 & 0.889 & 0.849 & 0.789 & 0.759 & 0.926 & 0.933 & 0.949 & 0.855 \\
+XGBoost (ECFP4 + RDKit-2D) [5-fold bagged] & 1.152 & 2.309 & 1.755 & 1.195 & 0.592 & 0.765 & 0.763 & 0.605 & 0.607 & 0.694 & 0.701 & 0.808 & 0.891 & 0.849 & 0.789 & 0.773 & 0.926 & 0.935 & 0.950 & 0.862 \\
+XGBoost (ECFP4-2048) & 1.697 & 3.229 & 2.437 & 1.771 & 1.126 & 1.530 & 1.464 & 1.210 & 0.794 & 0.874 & 0.866 & 0.978 & 0.899 & 0.844 & 0.779 & 0.705 & 0.912 & 0.896 & 0.919 & 0.813 \\
+XGBoost (RDKit-2D) & 0.998 & 2.251 & 1.585 & 1.099 & 0.596 & 0.792 & 0.787 & 0.604 & 0.609 & 0.700 & 0.715 & 0.823 & 0.882 & 0.843 & 0.777 & 0.742 & 0.924 & 0.928 & 0.949 & 0.864 \\
+\bottomrule
+\end{longtable}}
+\end{landscape}
+
+\section*{S3. Full rankings}
+\begin{longtable}{rlcccc}
+\caption{Mean rank over 20 settings for all models except internal SIG-Net ablations.}\\
+\toprule
+\# & Model & Mean rank & OOD mean rank & First & Top-3 \\
+\midrule
+1 & SIG-Net & 2.60 & 2.87 & 12 & 14 \\
+2 & Two-expert novelty gate & 5.20 & 5.80 & 1 & 7 \\
+3 & Two-expert gate (single D-MPNN) & 5.50 & 5.93 & 3 & 6 \\
+4 & Stack: D-MPNN ens. + anchor & 7.50 & 8.20 & 0 & 3 \\
+5 & Stack: XGBoost + D-MPNN & 9.65 & 10.27 & 0 & 3 \\
+6 & Multi-view anchor (5-fold bagged) & 11.38 & 11.73 & 0 & 2 \\
+7 & Multi-view anchor & 11.62 & 12.07 & 0 & 1 \\
+8 & D-MPNN + Deep CORAL [5-fold bagged] & 11.65 & 12.00 & 0 & 1 \\
+9 & D-MPNN + RDKit-2D [5-fold bagged] & 11.90 & 12.73 & 0 & 1 \\
+10 & Dual-stream gated residual & 12.25 & 12.87 & 0 & 1 \\
+11 & D-MPNN + RDKit-2D Ensemble (3x) & 13.35 & 13.53 & 0 & 0 \\
+12 & D-MPNN + RDKit-2D & 14.20 & 14.27 & 0 & 1 \\
+13 & D-MPNN + Deep CORAL & 14.30 & 14.33 & 1 & 1 \\
+14 & AttentiveFP [5-fold bagged] & 14.85 & 14.33 & 0 & 5 \\
+15 & HighwayMLP (ECFP4 + RDKit-2D) & 16.40 & 16.33 & 0 & 1 \\
+16 & GINE [5-fold bagged] & 16.55 & 15.67 & 0 & 2 \\
+17 & XGBoost (ECFP4 + RDKit-2D) [5-fold bagged] & 16.70 & 16.13 & 0 & 1 \\
+18 & XGBoost (ECFP4 + RDKit-2D) & 18.05 & 18.00 & 0 & 0 \\
+19 & GINE & 18.30 & 17.60 & 0 & 2 \\
+20 & D-MPNN (Chemprop) & 18.45 & 18.53 & 0 & 2 \\
+21 & AttentiveFP & 18.50 & 17.80 & 0 & 0 \\
+22 & XGBoost (RDKit-2D) & 19.10 & 18.67 & 0 & 0 \\
+23 & RF (RDKit-2D) [5-fold bagged] & 19.70 & 19.40 & 0 & 0 \\
+24 & RF (RDKit-2D) & 19.90 & 19.07 & 0 & 1 \\
+25 & GCN & 21.10 & 21.13 & 1 & 1 \\
+26 & GATv2 & 22.30 & 21.87 & 0 & 0 \\
+27 & RF (MACCS-167) & 23.10 & 22.93 & 0 & 1 \\
+28 & ChemBERTa-2 (77M-MTR) + XGBoost & 23.50 & 22.13 & 2 & 2 \\
+29 & ChemBERTa-2 (77M-MTR) + linear & 25.55 & 25.47 & 0 & 0 \\
+\bottomrule
+\end{longtable}
+
+\section*{S4. All paired comparisons (100 folds)}
+\begin{longtable}{lccrrc}
+\caption{SIG-Net vs.\ every other model. Relative improvement per fold (\%), two-sided Wilcoxon signed-rank test.}\\
+\toprule
+Comparator & Folds won & Settings won & Mean & Median & $p$ \\
+\midrule
+SIG-Net w/o novelty shrinkage & 27/100 & 9/20 & +0.05 & +0.00 & $p = 0.166$ \\
+Global stack (same experts) & 60/100 & 15/20 & +0.80 & +0.14 & $p = 0.0035$ \\
+Two-expert gate (single D-MPNN) & 68/100 & 14/20 & +2.63 & +1.58 & $p = 1.6 \times 10^{-5}$ \\
+Two-expert novelty gate & 69/100 & 15/20 & +2.67 & +1.47 & $p = 8.2 \times 10^{-6}$ \\
+Stack: D-MPNN ens. + anchor & 73/100 & 19/20 & +3.18 & +1.89 & $p = 2.0 \times 10^{-7}$ \\
+Stack: XGBoost + D-MPNN & 80/100 & 19/20 & +3.85 & +2.75 & $p = 1.3 \times 10^{-9}$ \\
+D-MPNN + Deep CORAL [5-fold bagged] & 86/100 & 19/20 & +4.57 & +3.67 & $p = 2.0 \times 10^{-13}$ \\
+D-MPNN + RDKit-2D [5-fold bagged] & 88/100 & 19/20 & +4.72 & +4.38 & $p = 1.6 \times 10^{-13}$ \\
+D-MPNN + RDKit-2D Ensemble (3x) & 83/100 & 20/20 & +4.87 & +4.50 & $p = 1.7 \times 10^{-11}$ \\
+D-MPNN + Deep CORAL & 82/100 & 19/20 & +5.18 & +4.64 & $p = 3.8 \times 10^{-11}$ \\
+D-MPNN + RDKit-2D & 84/100 & 19/20 & +5.23 & +4.72 & $p = 2.4 \times 10^{-11}$ \\
+AttentiveFP [5-fold bagged] & 87/100 & 19/20 & +5.31 & +3.87 & $p = 9.2 \times 10^{-12}$ \\
+Dual-stream gated residual & 80/100 & 19/20 & +5.45 & +2.56 & $p = 2.4 \times 10^{-11}$ \\
+Multi-view anchor & 76/100 & 18/20 & +5.70 & +2.48 & $p = 6.2 \times 10^{-10}$ \\
+Multi-view anchor (5-fold bagged) & 76/100 & 18/20 & +5.83 & +2.59 & $p = 3.3 \times 10^{-10}$ \\
+HighwayMLP (ECFP4 + RDKit-2D) & 87/100 & 20/20 & +6.95 & +5.93 & $p = 3.0 \times 10^{-12}$ \\
+AttentiveFP & 87/100 & 19/20 & +7.41 & +6.32 & $p = 1.7 \times 10^{-13}$ \\
+GINE [5-fold bagged] & 90/100 & 19/20 & +7.53 & +5.87 & $p = 6.3 \times 10^{-13}$ \\
+D-MPNN (Chemprop) & 89/100 & 19/20 & +8.96 & +6.42 & $p = 8.7 \times 10^{-15}$ \\
+XGBoost (RDKit-2D) & 91/100 & 20/20 & +9.28 & +8.44 & $p = 6.5 \times 10^{-16}$ \\
+GINE & 85/100 & 19/20 & +9.35 & +6.09 & $p = 3.3 \times 10^{-11}$ \\
+XGBoost (ECFP4 + RDKit-2D) & 90/100 & 20/20 & +9.75 & +7.36 & $p = 1.7 \times 10^{-14}$ \\
+XGBoost (ECFP4 + RDKit-2D) [5-fold bagged] & 89/100 & 20/20 & +9.78 & +6.82 & $p = 7.8 \times 10^{-15}$ \\
+GCN & 87/100 & 19/20 & +10.66 & +9.04 & $p = 1.6 \times 10^{-12}$ \\
+GATv2 & 92/100 & 19/20 & +11.40 & +9.10 & $p = 4.5 \times 10^{-15}$ \\
+RF (RDKit-2D) & 91/100 & 20/20 & +13.40 & +13.59 & $p = 5.3 \times 10^{-16}$ \\
+RF (RDKit-2D) [5-fold bagged] & 93/100 & 20/20 & +14.10 & +13.68 & $p = 5.2 \times 10^{-17}$ \\
+ChemBERTa-2 (77M-MTR) + linear & 95/100 & 20/20 & +20.77 & +23.06 & $p = 3.1 \times 10^{-17}$ \\
+RF (MACCS-167) & 95/100 & 19/20 & +21.46 & +20.65 & $p = 3.3 \times 10^{-16}$ \\
+ChemBERTa-2 (77M-MTR) + XGBoost & 93/100 & 18/20 & +23.41 & +29.94 & $p = 2.6 \times 10^{-16}$ \\
+XGBoost (ECFP4-2048) & 96/100 & 20/20 & +28.27 & +32.56 & $p = 1.0 \times 10^{-17}$ \\
+RF (ECFP4-2048) & 93/100 & 20/20 & +31.43 & +38.16 & $p = 1.5 \times 10^{-16}$ \\
+\bottomrule
+\end{longtable}
+
+\section*{S6. Confirmation on fresh splits: all comparisons}
+\begin{longtable}{lcrrc}
+\caption{SIG-Net v4 vs.\ every router and cross-fitted expert on the confirmatory folds (seeds 1--3).}\\
+\toprule
+Comparator & Folds won & Mean (\%) & Median (\%) & $p$ \\
+\midrule
+Global stack (7) [primary] & 35/57 & +1.27 & +0.20 & $p = 0.020$ \\
+SIG-Net v3 router (7) & 34/57 & +0.91 & +0.19 & $p = 0.117$ \\
+Global stack (9) & 34/57 & +1.34 & +0.21 & $p = 0.019$ \\
+v4 w/o residual correction & 29/57 & +0.29 & +0.01 & $p = 0.016$ \\
+v4 w/o composite kernel & 17/57 & +0.38 & +0.00 & $p = 0.857$ \\
+v4 w/o novelty shrinkage & 22/57 & +0.02 & +0.00 & $p = 0.633$ \\
+D-MPNN + RDKit-2D [5-fold bagged] & 48/57 & +5.10 & +2.43 & $p = 7.3 \times 10^{-7}$ \\
+D-MPNN + Deep CORAL [5-fold bagged] & 46/57 & +5.54 & +3.78 & $p = 4.1 \times 10^{-7}$ \\
+GINE [5-fold bagged] & 45/57 & +5.70 & +4.76 & $p = 1.9 \times 10^{-5}$ \\
+AttentiveFP [5-fold bagged] & 47/57 & +5.09 & +2.67 & $p = 5.5 \times 10^{-7}$ \\
+XGBoost (ECFP4 + RDKit-2D) [5-fold bagged] & 50/57 & +10.10 & +5.04 & $p = 2.1 \times 10^{-9}$ \\
+RF (RDKit-2D) [5-fold bagged] & 48/57 & +13.91 & +12.02 & $p = 2.4 \times 10^{-8}$ \\
+Anchor (Multi-View Stack) [5-fold bagged] & 42/57 & +6.18 & +3.06 & $p = 1.2 \times 10^{-5}$ \\
+ChemBERTa-2 + XGBoost [5-fold bagged] & 55/57 & +22.87 & +25.19 & $p = 2.1 \times 10^{-10}$ \\
+XGBoost (ECFP4) [5-fold bagged] & 54/57 & +28.21 & +32.41 & $p = 2.0 \times 10^{-10}$ \\
+Original router vs Global stack (7) & 28/57 & +0.27 & +0.00 & $p = 0.805$ \\
+Global stack (7), FreeSolv generic included & 38/60 & +1.64 & +0.26 & $p = 0.0052$ \\
+\bottomrule
+\end{longtable}
+
+\section*{S5. Per-setting results}
+\begin{longtable}{llccccccc}
+\caption{SIG-Net vs.\ the best other external model in each setting (mean $\pm$ SD over 5 seeds); paired $t$-test over seeds (descriptive; low power with $n=5$).}\\
+\toprule
+Dataset & Split & SIG-Net & Best other & Model & Rank & Seed wins & $p$ \\
+\midrule
+\texttt{BACE} & BM scaffold & 0.864 $\pm$ 0.046 & 0.856 $\pm$ 0.054 & AttentiveFP [5-fold bagged] & 1 & 4/5 & 0.326 \\
+\texttt{BACE} & Butina cluster & 0.790 $\pm$ 0.076 & 0.800 $\pm$ 0.060 & ChemBERTa-2 (77M-MTR) + XGBoost & 5 & 3/5 & 0.735 \\
+\texttt{BACE} & Generic skeleton & 0.815 $\pm$ 0.081 & 0.819 $\pm$ 0.048 & ChemBERTa-2 (77M-MTR) + XGBoost & 6 & 3/5 & 0.811 \\
+\texttt{BACE} & Random & 0.900 $\pm$ 0.021 & 0.902 $\pm$ 0.021 & Two-expert gate (single D-MPNN) & 5 & 2/5 & 0.441 \\
+\texttt{BBBP} & BM scaffold & 0.940 $\pm$ 0.029 & 0.940 $\pm$ 0.030 & Two-expert novelty gate & 2 & 3/5 & 0.807 \\
+\texttt{BBBP} & Butina cluster & 0.887 $\pm$ 0.033 & 0.888 $\pm$ 0.024 & Two-expert gate (single D-MPNN) & 6 & 3/5 & 0.844 \\
+\texttt{BBBP} & Generic skeleton & 0.954 $\pm$ 0.025 & 0.950 $\pm$ 0.017 & XGBoost (ECFP4 + RDKit-2D) [5-fold bagged] & 1 & 4/5 & 0.527 \\
+\texttt{BBBP} & Random & 0.940 $\pm$ 0.007 & 0.934 $\pm$ 0.011 & Two-expert gate (single D-MPNN) & 1 & 3/5 & 0.386 \\
+\texttt{ESOL} & BM scaffold & 0.754 $\pm$ 0.112 & 0.746 $\pm$ 0.072 & Two-expert gate (single D-MPNN) & 5 & 3/5 & 0.737 \\
+\texttt{ESOL} & Butina cluster & 0.544 $\pm$ 0.080 & 0.549 $\pm$ 0.084 & Two-expert novelty gate & 1 & 3/5 & 0.681 \\
+\texttt{ESOL} & Generic skeleton & 0.704 $\pm$ 0.093 & 0.717 $\pm$ 0.096 & Stack: XGBoost + D-MPNN & 1 & 2/5 & 0.339 \\
+\texttt{ESOL} & Random & 0.511 $\pm$ 0.042 & 0.515 $\pm$ 0.024 & Stack: D-MPNN ens. + anchor & 1 & 3/5 & 0.746 \\
+\texttt{FreeSolv} & BM scaffold & 1.720 $\pm$ 0.136 & 1.714 $\pm$ 0.176 & D-MPNN + Deep CORAL & 2 & 2/5 & 0.950 \\
+\texttt{FreeSolv} & Butina cluster & 1.038 $\pm$ 0.155 & 1.057 $\pm$ 0.133 & Stack: XGBoost + D-MPNN & 1 & 3/5 & 0.668 \\
+\texttt{FreeSolv} & Generic skeleton & 1.405 $\pm$ 0.054 & 1.279 $\pm$ 0.058 & GCN & 9 & 0/5 & 0.027 \\
+\texttt{FreeSolv} & Random & 0.800 $\pm$ 0.211 & 0.868 $\pm$ 0.168 & Two-expert novelty gate & 1 & 4/5 & 0.174 \\
+\texttt{Lipophilicity} & BM scaffold & 0.580 $\pm$ 0.037 & 0.584 $\pm$ 0.039 & AttentiveFP [5-fold bagged] & 1 & 4/5 & 0.556 \\
+\texttt{Lipophilicity} & Butina cluster & 0.668 $\pm$ 0.041 & 0.687 $\pm$ 0.057 & AttentiveFP [5-fold bagged] & 1 & 3/5 & 0.405 \\
+\texttt{Lipophilicity} & Generic skeleton & 0.589 $\pm$ 0.033 & 0.605 $\pm$ 0.033 & AttentiveFP [5-fold bagged] & 1 & 5/5 & 0.017 \\
+\texttt{Lipophilicity} & Random & 0.505 $\pm$ 0.047 & 0.527 $\pm$ 0.044 & D-MPNN (Chemprop) & 1 & 4/5 & 0.067 \\
+\bottomrule
+\end{longtable}
+\end{document}

@@ -1,0 +1,51 @@
+\section{Methods}
+
+\subsection{Datasets and curation}
+We use five MoleculeNet benchmarks\cite{wu2018moleculenet}: hydration free energy (\texttt{FreeSolv}\cite{mobley2014freesolv}), aqueous solubility (\texttt{ESOL}\cite{delaney2004esol}), octanol/water distribution at pH 7.4 (\texttt{Lipophilicity}), $\beta$-secretase inhibition (\texttt{BACE}\cite{subramanian2016bace}) and blood--brain barrier penetration (\texttt{BBBP}\cite{martins2012bbbp}). Structures were standardised with RDKit\cite{rdkit} (largest-fragment selection, neutralisation, canonical isomeric SMILES) and indexed by InChIKey. Duplicates with consistent labels ($\Delta y \le 0.2\,\sigma_y$, or identical class) were merged; conflicting duplicates were removed (Table~\ref{tab:datasets}).
+
+\subsection{Splitting protocols}
+Each dataset was split 80/10/10 into training, validation and test sets under four protocols, each with five seeds (42, 100, 2026, 7, 99): \emph{random}; \emph{BM scaffold}\cite{bemis1996properties}, grouping molecules by their heavy-atom ring-and-linker framework; \emph{generic skeleton}, grouping by that framework after converting all atoms to carbon and all bonds to single bonds; and \emph{Butina cluster}\cite{butina1999unsupervised}, sphere-exclusion clustering of 2048-bit Morgan (ECFP4\cite{rogers2010extended}) fingerprints at Tanimoto distance 0.6. Grouped protocols assign groups larger than 5\% of the data to the training set and shuffle the remaining groups by seed. For each split we computed scaffold and skeleton overlap, the fraction of test molecules whose generic skeleton occurs in the training set, and the nearest-neighbour (NN) Tanimoto similarity of each test molecule to the training set.
+
+\subsection{Featurisation}
+Graph models use one-hot atom features (atomic number, degree, formal charge, chirality, hydrogen count, hybridisation, aromaticity, scaled mass; 133 dimensions) and bond features (type, conjugation, ring membership, stereochemistry; 14 dimensions) following Chemprop\cite{yang2019analyzing,heid2024chemprop}. Descriptor models use 2D RDKit descriptors clipped to the training-fold 1st--99th percentiles and standardised on the training fold, 167-bit MACCS keys\cite{durant2002reoptimization} and ECFP4 bits. All scaling, clipping and PCA statistics are fitted on the training fold only.
+
+\subsection{Comparison models}
+We evaluate random forests and XGBoost on ECFP4, MACCS, RDKit-2D and ECFP4+RDKit-2D; a gated residual MLP on ECFP4+RDKit-2D; GCN\cite{kipf2017semi}, GINE\cite{xu2019powerful}, GATv2\cite{brody2022attentive} and AttentiveFP\cite{xiong2020pushing}; D-MPNN\cite{yang2019analyzing} with and without RDKit-2D features; D-MPNN with a Deep CORAL\cite{sun2016deep} feature-alignment penalty as a domain-invariance baseline; a three-seed D-MPNN+RDKit ensemble\cite{lakshminarayanan2017simple}; two pretrained-foundation-model baselines that use frozen, mean-pooled embeddings of the chemical language model ChemBERTa-2 (77M parameters, multi-task-regression pretraining\cite{ahmad2022chemberta2}) with a ridge (logistic for classification) head whose regularisation is chosen on the validation fold, or an XGBoost head with early stopping on the validation fold; five-fold cross-fitted (bagged) versions of each SIG-Net expert; a multi-view descriptor stack (below); two stacking baselines that combine two models with a single validation-selected weight; and two earlier designs from our group, a dual-stream gated residual network and a two-expert novelty gate. Neural models use standardised regression targets, AdamW with a one-cycle learning-rate schedule for 80 epochs, and the checkpoint with the best validation score. Tree models use fixed hyperparameters; XGBoost in the baselines uses early stopping on the validation fold.
+
+\subsection{Multi-view descriptor stack}
+Five learners are fitted on the training fold---random forests on MACCS and RDKit-2D, ridge (logistic for classification) regression on all descriptor views, and XGBoost on RDKit-2D and on ECFP4+RDKit-2D (ECFP4 for classification)---and combined with non-negative weights summing to one, fitted on the validation fold. Out-of-fold training-set predictions of this stack are obtained by three-fold scaffold-grouped cross-fitting.
+
+\subsection{SIG-Net}
+\paragraph{Experts and cross-fitting.} SIG-Net combines $M = 7$ experts: D-MPNN+RDKit, D-MPNN+RDKit with Deep CORAL, GINE, AttentiveFP, XGBoost on ECFP4+RDKit-2D, a random forest on RDKit-2D, and the multi-view descriptor stack. The training set is divided into $K = 5$ scaffold-grouped folds. Each expert $m$ is trained $K$ times, each time on $K-1$ folds, which gives an out-of-fold prediction $o_m(j)$ for every training molecule $j$. Validation and test predictions $p_m(x)$ are the means of the $K$ models.
+
+\paragraph{Global weights.} Non-negative weights $\mathbf{w}^{\mathrm{glob}}$ summing to one are fitted by minimising the squared error of $\sum_m w_m o_m(j)$ on all training molecules (Brier score for classification).
+
+\paragraph{Local competence.} For a query molecule $x$ let $\mathcal{N}_k(x)$ be its $k$ most similar training molecules (ECFP4 Tanimoto similarity $s_j$). The local error of expert $m$ is
+\begin{equation}
+e_m(x) = \frac{\sum_{j \in \mathcal{N}_k(x)} s_j\,\bigl(y_j - o_m(j)\bigr)^2}{\sum_{j \in \mathcal{N}_k(x)} s_j},
+\end{equation}
+with targets standardised for regression, and the local weights are $w^{\mathrm{loc}}_m(x) \propto \exp\!\bigl(-e_m(x) / (\tau\,\tilde{e}(x))\bigr)$, where $\tilde{e}(x)$ is the median of $e_m(x)$ over experts.
+
+\paragraph{Novelty shrinkage.} The final weights interpolate between local and global weights according to the mean neighbour similarity $\bar{s}_k(x)$:
+\begin{equation}
+\mathbf{w}(x) = \lambda(x)\,\mathbf{w}^{\mathrm{loc}}(x) + \bigl(1 - \lambda(x)\bigr)\,\mathbf{w}^{\mathrm{glob}}, \qquad \lambda(x) = \bar{s}_k(x)^{\gamma},
+\end{equation}
+and the prediction is $\hat{y}(x) = \sum_m w_m(x)\,p_m(x)$.
+
+\paragraph{Model selection.} The neighbourhood size $k \in \{5, 10, 20, 50\}$, temperature $\tau \in \{0.25, 0.5, 1, 2\}$ and shrinkage exponent $\gamma \in \{0, 1, 2, 4\}$, together with the purely global combination, are selected per fold by the validation score. The test fold is not used for any fitting or selection step. The overall design (expert set, $K$ and the grids) was fixed using validation scores on three development folds before the final run.
+
+\subsection{Refined router (SIG-Net v4) and confirmatory design}
+To address the limitations of the softmax router we developed a second router, evaluated only on fresh splits. Let $r_j \in \mathbb{R}^M$ be the standardised out-of-fold residuals of the $M$ experts on training molecule $j$, and $\boldsymbol{\Sigma}_{\mathrm{glob}} = N^{-1}\sum_j r_j r_j^\top$. For a query $x$, neighbours are taken under a composite kernel $K(x,j) = a\,s_{\mathrm{ECFP}} + (1-a)\,(s_{\mathrm{MACCS}} + s_{\mathrm{phys}})/2$, where $s_{\mathrm{phys}}$ is an RBF kernel on standardised RDKit descriptors (median-distance bandwidth). With neighbour weights $\omega_j \propto K(x,j)^2$ over the $k$ nearest training molecules,
+\begin{equation}
+\hat{\boldsymbol{\Sigma}}(x) = \lambda(x)\sum_{j \in \mathcal{N}_k(x)} \omega_j r_j r_j^\top + \bigl(1-\lambda(x)\bigr)\boldsymbol{\Sigma}_{\mathrm{glob}}, \qquad \lambda(x) = \bar{s}_k(x)^{\gamma},
+\end{equation}
+\begin{equation}
+\mathbf{w}(x) = \arg\min_{\mathbf{w} \in \Delta^{M-1}} \mathbf{w}^\top \bigl(\hat{\boldsymbol{\Sigma}}(x) + \rho\,\mathrm{tr}(\hat{\boldsymbol{\Sigma}}(x))\,\mathbf{I}/M\bigr)\,\mathbf{w}, \qquad
+\hat{y}(x) = \mathbf{w}(x)^\top \mathbf{p}(x) + \nu\,\bar{s}_k(x)^{\gamma_d} \sum_{j \in \mathcal{N}_k(x)} \omega_j \bigl(y_j - \mathbf{w}(x)^\top \mathbf{o}(j)\bigr),
+\end{equation}
+where $\bar{s}_k(x)$ is the mean ECFP similarity of the neighbours and $\mathbf{o}(j)$ the out-of-fold expert predictions. For squared loss the global stack solves the same problem with $\boldsymbol{\Sigma}_{\mathrm{glob}}$, so it is the special case $\lambda = 0$, $\nu = 0$. The weights are computed by projected gradient descent on the simplex; $k \in \{10, 25, 50\}$, $a \in \{0.5, 0.75, 1\}$, $\gamma \in \{0, 0.5, 1, 2, 4\}$ (or the global weights), $\nu \in \{0, 0.25, 0.5, 0.75\}$ and $\gamma_d \in \{1, 2\}$ are selected per fold on the validation set, with $\rho = 0.05$.
+
+The confirmation used new split seeds (development seed 11; confirmatory seeds 1--3) produced by the same splitting code, and nine cross-fitted experts (the seven SIG-Net experts, ChemBERTa-2 + XGBoost and XGBoost on ECFP4) whose out-of-fold, validation and test predictions were stored. The v4 variant (7 or 9 experts, with or without each component) was chosen on the development seed by a rule fixed beforehand; the design was then frozen (file hashes recorded) before any confirmatory result was computed. The primary endpoint---SIG-Net v4 vs.\ the global stack of the seven original experts over all confirmatory folds except the degenerate \texttt{FreeSolv} generic-skeleton split---and the secondary comparisons were registered in advance (Supporting Information).
+
+\subsection{Evaluation and statistics}
+Regression tasks are scored by test RMSE and the classification tasks (\texttt{BACE}, \texttt{BBBP}) by ROC-AUC. Each of the 20 dataset--protocol settings is run with five seeds (100 folds per model). We report mean $\pm$ SD over seeds; mean ranks across the 16 settings with a Friedman test and Nemenyi critical difference\cite{demsar2006statistical}; and paired comparisons over all 80 folds using the two-sided Wilcoxon signed-rank test on the per-fold relative improvement. The primary comparison and all secondary analyses were specified in an analysis plan written before the final test results were viewed; \texttt{BBBP} and the ChemBERTa-2 baselines were added later in response to review, under a written addendum made before their results were viewed (Supporting Information). Per-setting paired $t$-tests over five seeds are reported as descriptive statistics.

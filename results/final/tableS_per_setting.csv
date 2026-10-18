@@ -1,0 +1,21 @@
+Dataset,Split,Proposed,Best other,Best other model,Rank,Seed wins,paired t p
+BACE,bm_scaffold,0.864 ± 0.046,0.856 ± 0.054,AttentiveFP [5-fold bagged],1,4,0.32629277263353784
+BACE,butina_cluster,0.790 ± 0.076,0.800 ± 0.060,ChemBERTa-2 (77M-MTR) + XGBoost,5,3,0.7346441522626787
+BACE,generic_scaffold,0.815 ± 0.081,0.819 ± 0.048,ChemBERTa-2 (77M-MTR) + XGBoost,6,3,0.8112461680222782
+BACE,random,0.900 ± 0.021,0.902 ± 0.021,Two-expert gate (single D-MPNN),5,2,0.4411781848499464
+BBBP,bm_scaffold,0.940 ± 0.029,0.940 ± 0.030,Two-expert novelty gate,2,3,0.8071440666560877
+BBBP,butina_cluster,0.887 ± 0.033,0.888 ± 0.024,Two-expert gate (single D-MPNN),6,3,0.8435988387913509
+BBBP,generic_scaffold,0.954 ± 0.025,0.950 ± 0.017,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],1,4,0.5266564354572224
+BBBP,random,0.940 ± 0.007,0.934 ± 0.011,Two-expert gate (single D-MPNN),1,3,0.38617487702492914
+ESOL,bm_scaffold,0.754 ± 0.112,0.746 ± 0.072,Two-expert gate (single D-MPNN),5,3,0.7365207075554818
+ESOL,butina_cluster,0.544 ± 0.080,0.549 ± 0.084,Two-expert novelty gate,1,3,0.6809493276215896
+ESOL,generic_scaffold,0.704 ± 0.093,0.717 ± 0.096,Stack: XGBoost + D-MPNN,1,2,0.3385993044372926
+ESOL,random,0.511 ± 0.042,0.515 ± 0.024,Stack: D-MPNN ens. + anchor,1,3,0.7461551861493161
+FreeSolv,bm_scaffold,1.720 ± 0.136,1.714 ± 0.176,D-MPNN + Deep CORAL,2,2,0.9501363459151329
+FreeSolv,butina_cluster,1.038 ± 0.155,1.057 ± 0.133,Stack: XGBoost + D-MPNN,1,3,0.6677931655762817
+FreeSolv,generic_scaffold,1.405 ± 0.054,1.279 ± 0.058,GCN,9,0,0.02665751822372924
+FreeSolv,random,0.800 ± 0.211,0.868 ± 0.168,Two-expert novelty gate,1,4,0.17409943517619772
+Lipophilicity,bm_scaffold,0.580 ± 0.037,0.584 ± 0.039,AttentiveFP [5-fold bagged],1,4,0.5556001452147837
+Lipophilicity,butina_cluster,0.668 ± 0.041,0.687 ± 0.057,AttentiveFP [5-fold bagged],1,3,0.40503131597667935
+Lipophilicity,generic_scaffold,0.589 ± 0.033,0.605 ± 0.033,AttentiveFP [5-fold bagged],1,5,0.01746173488224204
+Lipophilicity,random,0.505 ± 0.047,0.527 ± 0.044,D-MPNN (Chemprop),1,4,0.06684182563510184

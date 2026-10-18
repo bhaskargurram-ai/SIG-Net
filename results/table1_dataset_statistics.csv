@@ -1,0 +1,6 @@
+Dataset,Task (Unit),Raw -> Curated N,Unique BM Scaffolds,Unique Generic Scaffolds,Singleton Scaffolds (%),MolWt (Mean ± SD),LogP (Mean ± SD),TPSA (Mean ± SD),Lipinski Ro5 Pass (%)
+FreeSolv,Regression (kcal/mol),642 -> 642,63,32,57.1%,139.0 ± 72.6,1.93 ± 1.49,20.4 ± 22.6,100.0%
+ESOL,Regression (log(mol/L)),1128 -> 1116,269,167,73.2%,203.7 ± 102.9,2.46 ± 1.84,34.6 ± 35.2,98.9%
+Lipophilicity,Regression (logD7.4),4200 -> 4200,2408,1516,77.1%,383.1 ± 106.9,3.28 ± 1.32,78.8 ± 31.9,96.2%
+BACE,Classification (Binary (0/1)),1513 -> 1509,648,376,69.6%,479.5 ± 121.7,3.77 ± 1.13,92.9 ± 32.5,89.3%
+BBBP,Classification (Binary (0/1)),2039 -> 1950,1012,686,76.1%,343.8 ± 148.0,2.43 ± 1.93,70.4 ± 57.9,93.3%

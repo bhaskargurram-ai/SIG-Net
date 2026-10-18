@@ -1,0 +1,961 @@
+Dataset,Split,Seed,Model,Task,Primary
+BACE,bm_scaffold,1,SIG-Net v4 (frozen),classification,0.9351360904913397
+BACE,bm_scaffold,1,v4 w/o residual correction,classification,0.9333686815129022
+BACE,bm_scaffold,1,v4 w/o composite kernel,classification,0.9436196535878403
+BACE,bm_scaffold,1,v4 w/o novelty shrinkage,classification,0.9407917992223401
+BACE,bm_scaffold,1,SIG-Net v3 router (7),classification,0.9429126899964653
+BACE,bm_scaffold,1,Global stack (7),classification,0.9432661717921527
+BACE,bm_scaffold,1,Global stack (9),classification,0.9436196535878403
+BACE,bm_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],classification,0.931247790738777
+BACE,bm_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9229409685401202
+BACE,bm_scaffold,1,GINE [5-fold bagged],classification,0.8623188405797102
+BACE,bm_scaffold,1,AttentiveFP [5-fold bagged],classification,0.8842347119123365
+BACE,bm_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9251502297631672
+BACE,bm_scaffold,1,RF (RDKit-2D) [5-fold bagged],classification,0.9449452103216684
+BACE,bm_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9440615058324497
+BACE,bm_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9019088016967127
+BACE,bm_scaffold,1,XGBoost (ECFP4) [5-fold bagged],classification,0.9271827500883705
+BACE,bm_scaffold,2,SIG-Net v4 (frozen),classification,0.9085760517799353
+BACE,bm_scaffold,2,v4 w/o residual correction,classification,0.9085760517799353
+BACE,bm_scaffold,2,v4 w/o composite kernel,classification,0.9085760517799353
+BACE,bm_scaffold,2,v4 w/o novelty shrinkage,classification,0.9051375404530745
+BACE,bm_scaffold,2,SIG-Net v3 router (7),classification,0.9039239482200648
+BACE,bm_scaffold,2,Global stack (7),classification,0.9081715210355987
+BACE,bm_scaffold,2,Global stack (9),classification,0.911205501618123
+BACE,bm_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],classification,0.8879449838187702
+BACE,bm_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],classification,0.8889563106796117
+BACE,bm_scaffold,2,GINE [5-fold bagged],classification,0.8673139158576052
+BACE,bm_scaffold,2,AttentiveFP [5-fold bagged],classification,0.9019012944983819
+BACE,bm_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8885517799352751
+BACE,bm_scaffold,2,RF (RDKit-2D) [5-fold bagged],classification,0.8972491909385113
+BACE,bm_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9039239482200648
+BACE,bm_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9023058252427184
+BACE,bm_scaffold,2,XGBoost (ECFP4) [5-fold bagged],classification,0.9063511326860841
+BACE,bm_scaffold,3,SIG-Net v4 (frozen),classification,0.8889194139194139
+BACE,bm_scaffold,3,v4 w/o residual correction,classification,0.8893772893772893
+BACE,bm_scaffold,3,v4 w/o composite kernel,classification,0.8917582417582417
+BACE,bm_scaffold,3,v4 w/o novelty shrinkage,classification,0.8928571428571428
+BACE,bm_scaffold,3,SIG-Net v3 router (7),classification,0.8888278388278388
+BACE,bm_scaffold,3,Global stack (7),classification,0.8899267399267399
+BACE,bm_scaffold,3,Global stack (9),classification,0.8882783882783882
+BACE,bm_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],classification,0.8527472527472527
+BACE,bm_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],classification,0.8509157509157509
+BACE,bm_scaffold,3,GINE [5-fold bagged],classification,0.8633699633699633
+BACE,bm_scaffold,3,AttentiveFP [5-fold bagged],classification,0.8543956043956044
+BACE,bm_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8693223443223443
+BACE,bm_scaffold,3,RF (RDKit-2D) [5-fold bagged],classification,0.8876373626373626
+BACE,bm_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],classification,0.8913003663003662
+BACE,bm_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8825091575091575
+BACE,bm_scaffold,3,XGBoost (ECFP4) [5-fold bagged],classification,0.8863553113553113
+BACE,butina_cluster,1,SIG-Net v4 (frozen),classification,0.8655737704918033
+BACE,butina_cluster,1,v4 w/o residual correction,classification,0.8655737704918033
+BACE,butina_cluster,1,v4 w/o composite kernel,classification,0.8655737704918033
+BACE,butina_cluster,1,v4 w/o novelty shrinkage,classification,0.8655737704918033
+BACE,butina_cluster,1,SIG-Net v3 router (7),classification,0.8641165755919854
+BACE,butina_cluster,1,Global stack (7),classification,0.8577413479052823
+BACE,butina_cluster,1,Global stack (9),classification,0.8564663023679416
+BACE,butina_cluster,1,D-MPNN + RDKit-2D [5-fold bagged],classification,0.8712204007285973
+BACE,butina_cluster,1,D-MPNN + Deep CORAL [5-fold bagged],classification,0.8974499089253187
+BACE,butina_cluster,1,GINE [5-fold bagged],classification,0.9300546448087431
+BACE,butina_cluster,1,AttentiveFP [5-fold bagged],classification,0.8621129326047359
+BACE,butina_cluster,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8389799635701275
+BACE,butina_cluster,1,RF (RDKit-2D) [5-fold bagged],classification,0.9043715846994536
+BACE,butina_cluster,1,Anchor (Multi-View Stack) [5-fold bagged],classification,0.7830601092896174
+BACE,butina_cluster,1,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8471766848816029
+BACE,butina_cluster,1,XGBoost (ECFP4) [5-fold bagged],classification,0.7602914389799635
+BACE,butina_cluster,2,SIG-Net v4 (frozen),classification,0.809572006940428
+BACE,butina_cluster,2,v4 w/o residual correction,classification,0.809572006940428
+BACE,butina_cluster,2,v4 w/o composite kernel,classification,0.8027761711972238
+BACE,butina_cluster,2,v4 w/o novelty shrinkage,classification,0.8199826489300174
+BACE,butina_cluster,2,SIG-Net v3 router (7),classification,0.8374783111625217
+BACE,butina_cluster,2,Global stack (7),classification,0.8040775014459225
+BACE,butina_cluster,2,Global stack (9),classification,0.8052342394447658
+BACE,butina_cluster,2,D-MPNN + RDKit-2D [5-fold bagged],classification,0.8295257374204743
+BACE,butina_cluster,2,D-MPNN + Deep CORAL [5-fold bagged],classification,0.825187969924812
+BACE,butina_cluster,2,GINE [5-fold bagged],classification,0.8130422209369578
+BACE,butina_cluster,2,AttentiveFP [5-fold bagged],classification,0.7968478889531521
+BACE,butina_cluster,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.818102949681897
+BACE,butina_cluster,2,RF (RDKit-2D) [5-fold bagged],classification,0.7962695199537304
+BACE,butina_cluster,2,Anchor (Multi-View Stack) [5-fold bagged],classification,0.7880277617119722
+BACE,butina_cluster,2,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.7658328513591672
+BACE,butina_cluster,2,XGBoost (ECFP4) [5-fold bagged],classification,0.7841960670908039
+BACE,butina_cluster,3,SIG-Net v4 (frozen),classification,0.8933274802458296
+BACE,butina_cluster,3,v4 w/o residual correction,classification,0.8933274802458296
+BACE,butina_cluster,3,v4 w/o composite kernel,classification,0.8933274802458296
+BACE,butina_cluster,3,v4 w/o novelty shrinkage,classification,0.8933274802458296
+BACE,butina_cluster,3,SIG-Net v3 router (7),classification,0.9231782265144863
+BACE,butina_cluster,3,Global stack (7),classification,0.8915715539947322
+BACE,butina_cluster,3,Global stack (9),classification,0.853819139596137
+BACE,butina_cluster,3,D-MPNN + RDKit-2D [5-fold bagged],classification,0.916593503072871
+BACE,butina_cluster,3,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9205443371378401
+BACE,butina_cluster,3,GINE [5-fold bagged],classification,0.9262510974539069
+BACE,butina_cluster,3,AttentiveFP [5-fold bagged],classification,0.913081650570676
+BACE,butina_cluster,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8498683055311677
+BACE,butina_cluster,3,RF (RDKit-2D) [5-fold bagged],classification,0.8718173836698859
+BACE,butina_cluster,3,Anchor (Multi-View Stack) [5-fold bagged],classification,0.8999122036874451
+BACE,butina_cluster,3,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9359086918349429
+BACE,butina_cluster,3,XGBoost (ECFP4) [5-fold bagged],classification,0.6479367866549606
+BACE,generic_scaffold,1,SIG-Net v4 (frozen),classification,0.8247277836318933
+BACE,generic_scaffold,1,v4 w/o residual correction,classification,0.8247277836318933
+BACE,generic_scaffold,1,v4 w/o composite kernel,classification,0.8247277836318933
+BACE,generic_scaffold,1,v4 w/o novelty shrinkage,classification,0.826659641728135
+BACE,generic_scaffold,1,SIG-Net v3 router (7),classification,0.8131366350544433
+BACE,generic_scaffold,1,Global stack (7),classification,0.8275377590446084
+BACE,generic_scaffold,1,Global stack (9),classification,0.826659641728135
+BACE,generic_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],classification,0.7985598876009835
+BACE,generic_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],classification,0.7780119423955041
+BACE,generic_scaffold,1,GINE [5-fold bagged],classification,0.7727432384966632
+BACE,generic_scaffold,1,AttentiveFP [5-fold bagged],classification,0.8001404987706359
+BACE,generic_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8162100456621004
+BACE,generic_scaffold,1,RF (RDKit-2D) [5-fold bagged],classification,0.837284861257464
+BACE,generic_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],classification,0.8392167193537057
+BACE,generic_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8406217070600632
+BACE,generic_scaffold,1,XGBoost (ECFP4) [5-fold bagged],classification,0.8174394099051634
+BACE,generic_scaffold,2,SIG-Net v4 (frozen),classification,0.8751359188111635
+BACE,generic_scaffold,2,v4 w/o residual correction,classification,0.869155491119971
+BACE,generic_scaffold,2,v4 w/o composite kernel,classification,0.8758608191373687
+BACE,generic_scaffold,2,v4 w/o novelty shrinkage,classification,0.8776730699528814
+BACE,generic_scaffold,2,SIG-Net v3 router (7),classification,0.8718738673432402
+BACE,generic_scaffold,2,Global stack (7),classification,0.8762232693004712
+BACE,generic_scaffold,2,Global stack (9),classification,0.8776730699528814
+BACE,generic_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],classification,0.8519391083725988
+BACE,generic_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],classification,0.849583182312432
+BACE,generic_scaffold,2,GINE [5-fold bagged],classification,0.8633562885103299
+BACE,generic_scaffold,2,AttentiveFP [5-fold bagged],classification,0.8803914461761508
+BACE,generic_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8519391083725988
+BACE,generic_scaffold,2,RF (RDKit-2D) [5-fold bagged],classification,0.8617252627763682
+BACE,generic_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],classification,0.8731424429140993
+BACE,generic_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8588256614715477
+BACE,generic_scaffold,2,XGBoost (ECFP4) [5-fold bagged],classification,0.8662558898151506
+BACE,generic_scaffold,3,SIG-Net v4 (frozen),classification,0.8905525846702317
+BACE,generic_scaffold,3,v4 w/o residual correction,classification,0.889126559714795
+BACE,generic_scaffold,3,v4 w/o composite kernel,classification,0.8935828877005347
+BACE,generic_scaffold,3,v4 w/o novelty shrinkage,classification,0.8899286987522282
+BACE,generic_scaffold,3,SIG-Net v3 router (7),classification,0.8950089126559715
+BACE,generic_scaffold,3,Global stack (7),classification,0.8916221033868093
+BACE,generic_scaffold,3,Global stack (9),classification,0.8918003565062389
+BACE,generic_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],classification,0.848663101604278
+BACE,generic_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],classification,0.8593582887700535
+BACE,generic_scaffold,3,GINE [5-fold bagged],classification,0.8602495543672015
+BACE,generic_scaffold,3,AttentiveFP [5-fold bagged],classification,0.867379679144385
+BACE,generic_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8919786096256686
+BACE,generic_scaffold,3,RF (RDKit-2D) [5-fold bagged],classification,0.9064171122994652
+BACE,generic_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],classification,0.8862745098039216
+BACE,generic_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8524064171122995
+BACE,generic_scaffold,3,XGBoost (ECFP4) [5-fold bagged],classification,0.8880570409982175
+BACE,random,1,SIG-Net v4 (frozen),classification,0.9001788908765653
+BACE,random,1,v4 w/o residual correction,classification,0.90304114490161
+BACE,random,1,v4 w/o composite kernel,classification,0.9013416815742397
+BACE,random,1,v4 w/o novelty shrinkage,classification,0.8975849731663684
+BACE,random,1,SIG-Net v3 router (7),classification,0.9023255813953489
+BACE,random,1,Global stack (7),classification,0.9023255813953489
+BACE,random,1,Global stack (9),classification,0.90304114490161
+BACE,random,1,D-MPNN + RDKit-2D [5-fold bagged],classification,0.8803220035778175
+BACE,random,1,D-MPNN + Deep CORAL [5-fold bagged],classification,0.8844364937388193
+BACE,random,1,GINE [5-fold bagged],classification,0.8677996422182469
+BACE,random,1,AttentiveFP [5-fold bagged],classification,0.8817531305903399
+BACE,random,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8883720930232557
+BACE,random,1,RF (RDKit-2D) [5-fold bagged],classification,0.8978533094812164
+BACE,random,1,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9069767441860466
+BACE,random,1,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8910554561717353
+BACE,random,1,XGBoost (ECFP4) [5-fold bagged],classification,0.8846153846153847
+BACE,random,2,SIG-Net v4 (frozen),classification,0.9169312169312169
+BACE,random,2,v4 w/o residual correction,classification,0.917283950617284
+BACE,random,2,v4 w/o composite kernel,classification,0.9169312169312169
+BACE,random,2,v4 w/o novelty shrinkage,classification,0.9190476190476191
+BACE,random,2,SIG-Net v3 router (7),classification,0.916931216931217
+BACE,random,2,Global stack (7),classification,0.9222222222222223
+BACE,random,2,Global stack (9),classification,0.9229276895943562
+BACE,random,2,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9114638447971781
+BACE,random,2,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9084656084656084
+BACE,random,2,GINE [5-fold bagged],classification,0.8507936507936509
+BACE,random,2,AttentiveFP [5-fold bagged],classification,0.8985890652557319
+BACE,random,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9038800705467372
+BACE,random,2,RF (RDKit-2D) [5-fold bagged],classification,0.9010582010582011
+BACE,random,2,Anchor (Multi-View Stack) [5-fold bagged],classification,0.924867724867725
+BACE,random,2,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8897707231040565
+BACE,random,2,XGBoost (ECFP4) [5-fold bagged],classification,0.9195767195767196
+BACE,random,3,SIG-Net v4 (frozen),classification,0.9217107647698441
+BACE,random,3,v4 w/o residual correction,classification,0.9217107647698441
+BACE,random,3,v4 w/o composite kernel,classification,0.9324936571221458
+BACE,random,3,v4 w/o novelty shrinkage,classification,0.9345777455599855
+BACE,random,3,SIG-Net v3 router (7),classification,0.9318593693367162
+BACE,random,3,Global stack (7),classification,0.9314969191736137
+BACE,random,3,Global stack (9),classification,0.933671620152229
+BACE,random,3,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9206234142805365
+BACE,random,3,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9198985139543313
+BACE,random,3,GINE [5-fold bagged],classification,0.8798477709314968
+BACE,random,3,AttentiveFP [5-fold bagged],classification,0.9253352664008699
+BACE,random,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9106560347952157
+BACE,random,3,RF (RDKit-2D) [5-fold bagged],classification,0.9111997100398695
+BACE,random,3,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9343965204784342
+BACE,random,3,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8896339253352664
+BACE,random,3,XGBoost (ECFP4) [5-fold bagged],classification,0.9349401957230881
+BBBP,bm_scaffold,1,SIG-Net v4 (frozen),classification,0.9518620689655173
+BBBP,bm_scaffold,1,v4 w/o residual correction,classification,0.9518620689655173
+BBBP,bm_scaffold,1,v4 w/o composite kernel,classification,0.9518620689655173
+BBBP,bm_scaffold,1,v4 w/o novelty shrinkage,classification,0.9518620689655173
+BBBP,bm_scaffold,1,SIG-Net v3 router (7),classification,0.9568275862068965
+BBBP,bm_scaffold,1,Global stack (7),classification,0.952551724137931
+BBBP,bm_scaffold,1,Global stack (9),classification,0.9524137931034483
+BBBP,bm_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9558620689655172
+BBBP,bm_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9525517241379311
+BBBP,bm_scaffold,1,GINE [5-fold bagged],classification,0.9536551724137932
+BBBP,bm_scaffold,1,AttentiveFP [5-fold bagged],classification,0.9433103448275861
+BBBP,bm_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9497931034482759
+BBBP,bm_scaffold,1,RF (RDKit-2D) [5-fold bagged],classification,0.9463448275862069
+BBBP,bm_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9477241379310344
+BBBP,bm_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9384827586206895
+BBBP,bm_scaffold,1,XGBoost (ECFP4) [5-fold bagged],classification,0.9295172413793104
+BBBP,bm_scaffold,2,SIG-Net v4 (frozen),classification,0.9718097155801662
+BBBP,bm_scaffold,2,v4 w/o residual correction,classification,0.9687893279637554
+BBBP,bm_scaffold,2,v4 w/o composite kernel,classification,0.9718097155801662
+BBBP,bm_scaffold,2,v4 w/o novelty shrinkage,classification,0.9848980619179462
+BBBP,bm_scaffold,2,SIG-Net v3 router (7),classification,0.9638811980870878
+BBBP,bm_scaffold,2,Global stack (7),classification,0.9670274351875158
+BBBP,bm_scaffold,2,Global stack (9),classification,0.9669015857034986
+BBBP,bm_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9543166373017871
+BBBP,bm_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9290208910143468
+BBBP,bm_scaffold,2,GINE [5-fold bagged],classification,0.932418827082809
+BBBP,bm_scaffold,2,AttentiveFP [5-fold bagged],classification,0.8687389881701485
+BBBP,bm_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9652655424112762
+BBBP,bm_scaffold,2,RF (RDKit-2D) [5-fold bagged],classification,0.9627485527309337
+BBBP,bm_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9674049836395671
+BBBP,bm_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9472690661968286
+BBBP,bm_scaffold,2,XGBoost (ECFP4) [5-fold bagged],classification,0.9497860558771709
+BBBP,bm_scaffold,3,SIG-Net v4 (frozen),classification,0.9723865877712031
+BBBP,bm_scaffold,3,v4 w/o residual correction,classification,0.9709072978303748
+BBBP,bm_scaffold,3,v4 w/o composite kernel,classification,0.9672912557527942
+BBBP,bm_scaffold,3,v4 w/o novelty shrinkage,classification,0.9723865877712032
+BBBP,bm_scaffold,3,SIG-Net v3 router (7),classification,0.9714003944773175
+BBBP,bm_scaffold,3,Global stack (7),classification,0.9671268902038133
+BBBP,bm_scaffold,3,Global stack (9),classification,0.9664694280078896
+BBBP,bm_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9523339907955293
+BBBP,bm_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9554569362261671
+BBBP,bm_scaffold,3,GINE [5-fold bagged],classification,0.9626890203813281
+BBBP,bm_scaffold,3,AttentiveFP [5-fold bagged],classification,0.9424720578566732
+BBBP,bm_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.955456936226167
+BBBP,bm_scaffold,3,RF (RDKit-2D) [5-fold bagged],classification,0.9529914529914529
+BBBP,bm_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9661406969099278
+BBBP,bm_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9447731755424064
+BBBP,bm_scaffold,3,XGBoost (ECFP4) [5-fold bagged],classification,0.967784352399737
+BBBP,butina_cluster,1,SIG-Net v4 (frozen),classification,0.9698101462807346
+BBBP,butina_cluster,1,v4 w/o residual correction,classification,0.9698101462807346
+BBBP,butina_cluster,1,v4 w/o composite kernel,classification,0.9673202614379085
+BBBP,butina_cluster,1,v4 w/o novelty shrinkage,classification,0.9698101462807346
+BBBP,butina_cluster,1,SIG-Net v3 router (7),classification,0.9609399315281669
+BBBP,butina_cluster,1,Global stack (7),classification,0.9643635231870527
+BBBP,butina_cluster,1,Global stack (9),classification,0.9657640834111422
+BBBP,butina_cluster,1,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9449112978524743
+BBBP,butina_cluster,1,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9098972922502334
+BBBP,butina_cluster,1,GINE [5-fold bagged],classification,0.940865234982882
+BBBP,butina_cluster,1,AttentiveFP [5-fold bagged],classification,0.9484905073140366
+BBBP,butina_cluster,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9572051042639278
+BBBP,butina_cluster,1,RF (RDKit-2D) [5-fold bagged],classification,0.9608621226268285
+BBBP,butina_cluster,1,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9723000311235606
+BBBP,butina_cluster,1,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9367413632119514
+BBBP,butina_cluster,1,XGBoost (ECFP4) [5-fold bagged],classification,0.9412542794895736
+BBBP,butina_cluster,2,SIG-Net v4 (frozen),classification,0.8457907159716759
+BBBP,butina_cluster,2,v4 w/o residual correction,classification,0.8371361132966169
+BBBP,butina_cluster,2,v4 w/o composite kernel,classification,0.8457907159716759
+BBBP,butina_cluster,2,v4 w/o novelty shrinkage,classification,0.8248426435877262
+BBBP,butina_cluster,2,SIG-Net v3 router (7),classification,0.8672305271439811
+BBBP,butina_cluster,2,Global stack (7),classification,0.8644767899291896
+BBBP,butina_cluster,2,Global stack (9),classification,0.8609362706530291
+BBBP,butina_cluster,2,D-MPNN + RDKit-2D [5-fold bagged],classification,0.8353658536585367
+BBBP,butina_cluster,2,D-MPNN + Deep CORAL [5-fold bagged],classification,0.8465774980330448
+BBBP,butina_cluster,2,GINE [5-fold bagged],classification,0.8709677419354839
+BBBP,butina_cluster,2,AttentiveFP [5-fold bagged],classification,0.8979150275373723
+BBBP,butina_cluster,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8485444531864673
+BBBP,butina_cluster,2,RF (RDKit-2D) [5-fold bagged],classification,0.8629032258064517
+BBBP,butina_cluster,2,Anchor (Multi-View Stack) [5-fold bagged],classification,0.8538552321007081
+BBBP,butina_cluster,2,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8053697875688434
+BBBP,butina_cluster,2,XGBoost (ECFP4) [5-fold bagged],classification,0.8197285601888277
+BBBP,butina_cluster,3,SIG-Net v4 (frozen),classification,0.9575806451612903
+BBBP,butina_cluster,3,v4 w/o residual correction,classification,0.9575806451612903
+BBBP,butina_cluster,3,v4 w/o composite kernel,classification,0.9575806451612903
+BBBP,butina_cluster,3,v4 w/o novelty shrinkage,classification,0.9575806451612903
+BBBP,butina_cluster,3,SIG-Net v3 router (7),classification,0.9419354838709677
+BBBP,butina_cluster,3,Global stack (7),classification,0.9374193548387098
+BBBP,butina_cluster,3,Global stack (9),classification,0.9367741935483871
+BBBP,butina_cluster,3,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9404838709677419
+BBBP,butina_cluster,3,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9390322580645163
+BBBP,butina_cluster,3,GINE [5-fold bagged],classification,0.9056451612903226
+BBBP,butina_cluster,3,AttentiveFP [5-fold bagged],classification,0.9425806451612904
+BBBP,butina_cluster,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9209677419354839
+BBBP,butina_cluster,3,RF (RDKit-2D) [5-fold bagged],classification,0.9233870967741936
+BBBP,butina_cluster,3,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9261290322580645
+BBBP,butina_cluster,3,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9083870967741935
+BBBP,butina_cluster,3,XGBoost (ECFP4) [5-fold bagged],classification,0.915
+BBBP,generic_scaffold,1,SIG-Net v4 (frozen),classification,0.8613296616837136
+BBBP,generic_scaffold,1,v4 w/o residual correction,classification,0.9128638867033831
+BBBP,generic_scaffold,1,v4 w/o composite kernel,classification,0.9002753737214793
+BBBP,generic_scaffold,1,v4 w/o novelty shrinkage,classification,0.8603461841070024
+BBBP,generic_scaffold,1,SIG-Net v3 router (7),classification,0.9049960660896932
+BBBP,generic_scaffold,1,Global stack (7),classification,0.8851298190401259
+BBBP,generic_scaffold,1,Global stack (9),classification,0.8853265145554682
+BBBP,generic_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],classification,0.8914240755310779
+BBBP,generic_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],classification,0.8910306845003932
+BBBP,generic_scaffold,1,GINE [5-fold bagged],classification,0.9167977970102281
+BBBP,generic_scaffold,1,AttentiveFP [5-fold bagged],classification,0.8929976396538158
+BBBP,generic_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.8581825334382376
+BBBP,generic_scaffold,1,RF (RDKit-2D) [5-fold bagged],classification,0.8634933123524784
+BBBP,generic_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],classification,0.8963414634146342
+BBBP,generic_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.8225806451612904
+BBBP,generic_scaffold,1,XGBoost (ECFP4) [5-fold bagged],classification,0.8717545239968529
+BBBP,generic_scaffold,2,SIG-Net v4 (frozen),classification,0.9437869822485208
+BBBP,generic_scaffold,2,v4 w/o residual correction,classification,0.9455352339967725
+BBBP,generic_scaffold,2,v4 w/o composite kernel,classification,0.9370629370629371
+BBBP,generic_scaffold,2,v4 w/o novelty shrinkage,classification,0.9440559440559441
+BBBP,generic_scaffold,2,SIG-Net v3 router (7),classification,0.9460731576116191
+BBBP,generic_scaffold,2,Global stack (7),classification,0.9454007530930608
+BBBP,generic_scaffold,2,Global stack (9),classification,0.944055944055944
+BBBP,generic_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9288596019365251
+BBBP,generic_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9269768692845616
+BBBP,generic_scaffold,2,GINE [5-fold bagged],classification,0.9402904787520172
+BBBP,generic_scaffold,2,AttentiveFP [5-fold bagged],classification,0.9300699300699301
+BBBP,generic_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9393491124260355
+BBBP,generic_scaffold,2,RF (RDKit-2D) [5-fold bagged],classification,0.9380043033889188
+BBBP,generic_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9355836471221086
+BBBP,generic_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9242872512103282
+BBBP,generic_scaffold,2,XGBoost (ECFP4) [5-fold bagged],classification,0.9191769768692847
+BBBP,generic_scaffold,3,SIG-Net v4 (frozen),classification,0.9269039976655968
+BBBP,generic_scaffold,3,v4 w/o residual correction,classification,0.9264662970528159
+BBBP,generic_scaffold,3,v4 w/o composite kernel,classification,0.9280711992996791
+BBBP,generic_scaffold,3,v4 w/o novelty shrinkage,classification,0.926028596440035
+BBBP,generic_scaffold,3,SIG-Net v3 router (7),classification,0.923985993580391
+BBBP,generic_scaffold,3,Global stack (7),classification,0.9200466880653633
+BBBP,generic_scaffold,3,Global stack (9),classification,0.9216515903122263
+BBBP,generic_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9177122847971987
+BBBP,generic_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9207761890866648
+BBBP,generic_scaffold,3,GINE [5-fold bagged],classification,0.9019550627370878
+BBBP,generic_scaffold,3,AttentiveFP [5-fold bagged],classification,0.8883863437408812
+BBBP,generic_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9363875109425154
+BBBP,generic_scaffold,3,RF (RDKit-2D) [5-fold bagged],classification,0.919900787861103
+BBBP,generic_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9252990954187336
+BBBP,generic_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9210679894951853
+BBBP,generic_scaffold,3,XGBoost (ECFP4) [5-fold bagged],classification,0.8926174496644296
+BBBP,random,1,SIG-Net v4 (frozen),classification,0.9152690426275332
+BBBP,random,1,v4 w/o residual correction,classification,0.9187631027253669
+BBBP,random,1,v4 w/o composite kernel,classification,0.9283717679944096
+BBBP,random,1,v4 w/o novelty shrinkage,classification,0.912124388539483
+BBBP,random,1,SIG-Net v3 router (7),classification,0.923130677847659
+BBBP,random,1,Global stack (7),classification,0.9267994409503845
+BBBP,random,1,Global stack (9),classification,0.926450034940601
+BBBP,random,1,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9215583508036338
+BBBP,random,1,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9175401816911251
+BBBP,random,1,GINE [5-fold bagged],classification,0.9334381551362683
+BBBP,random,1,AttentiveFP [5-fold bagged],classification,0.9173654786862335
+BBBP,random,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9252271139063593
+BBBP,random,1,RF (RDKit-2D) [5-fold bagged],classification,0.9159678546470998
+BBBP,random,1,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9259259259259259
+BBBP,random,1,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9042627533193571
+BBBP,random,1,XGBoost (ECFP4) [5-fold bagged],classification,0.8749126484975541
+BBBP,random,2,SIG-Net v4 (frozen),classification,0.9318973709217612
+BBBP,random,2,v4 w/o residual correction,classification,0.9318973709217612
+BBBP,random,2,v4 w/o composite kernel,classification,0.9412416851441242
+BBBP,random,2,v4 w/o novelty shrinkage,classification,0.9318973709217612
+BBBP,random,2,SIG-Net v3 router (7),classification,0.9258789990497307
+BBBP,random,2,Global stack (7),classification,0.9469433006018372
+BBBP,random,2,Global stack (9),classification,0.9478935698447895
+BBBP,random,2,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9111498257839722
+BBBP,random,2,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9189103579347482
+BBBP,random,2,GINE [5-fold bagged],classification,0.923186569528033
+BBBP,random,2,AttentiveFP [5-fold bagged],classification,0.9098828001267025
+BBBP,random,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9478935698447893
+BBBP,random,2,RF (RDKit-2D) [5-fold bagged],classification,0.9458346531517263
+BBBP,random,2,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9396579030725373
+BBBP,random,2,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9109914475768134
+BBBP,random,2,XGBoost (ECFP4) [5-fold bagged],classification,0.9209692746278112
+BBBP,random,3,SIG-Net v4 (frozen),classification,0.9600886917960089
+BBBP,random,3,v4 w/o residual correction,classification,0.9602470700031676
+BBBP,random,3,v4 w/o composite kernel,classification,0.9580297751029458
+BBBP,random,3,v4 w/o novelty shrinkage,classification,0.9602470700031676
+BBBP,random,3,SIG-Net v3 router (7),classification,0.945993031358885
+BBBP,random,3,Global stack (7),classification,0.9529616724738676
+BBBP,random,3,Global stack (9),classification,0.9521697814380742
+BBBP,random,3,D-MPNN + RDKit-2D [5-fold bagged],classification,0.9383908774152676
+BBBP,random,3,D-MPNN + Deep CORAL [5-fold bagged],classification,0.9274627811213177
+BBBP,random,3,GINE [5-fold bagged],classification,0.930947101678809
+BBBP,random,3,AttentiveFP [5-fold bagged],classification,0.9073487488121634
+BBBP,random,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],classification,0.9573962622743111
+BBBP,random,3,RF (RDKit-2D) [5-fold bagged],classification,0.9493189737092177
+BBBP,random,3,Anchor (Multi-View Stack) [5-fold bagged],classification,0.9604054482103264
+BBBP,random,3,ChemBERTa-2 + XGBoost [5-fold bagged],classification,0.9262749445676275
+BBBP,random,3,XGBoost (ECFP4) [5-fold bagged],classification,0.9498732974342731
+ESOL,bm_scaffold,1,SIG-Net v4 (frozen),regression,0.778805184715855
+ESOL,bm_scaffold,1,v4 w/o residual correction,regression,0.7849526439309352
+ESOL,bm_scaffold,1,v4 w/o composite kernel,regression,0.7848505673550626
+ESOL,bm_scaffold,1,v4 w/o novelty shrinkage,regression,0.7960541335989479
+ESOL,bm_scaffold,1,SIG-Net v3 router (7),regression,0.7713236456885877
+ESOL,bm_scaffold,1,Global stack (7),regression,0.7627676973033598
+ESOL,bm_scaffold,1,Global stack (9),regression,0.7628248713785869
+ESOL,bm_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.7403916148131594
+ESOL,bm_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.7511395642496371
+ESOL,bm_scaffold,1,GINE [5-fold bagged],regression,0.6963009168154884
+ESOL,bm_scaffold,1,AttentiveFP [5-fold bagged],regression,0.7823555652001852
+ESOL,bm_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.9886252913843272
+ESOL,bm_scaffold,1,RF (RDKit-2D) [5-fold bagged],regression,1.121034849775054
+ESOL,bm_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.8544084014141802
+ESOL,bm_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.3264429952317405
+ESOL,bm_scaffold,1,XGBoost (ECFP4) [5-fold bagged],regression,1.837586858899787
+ESOL,bm_scaffold,2,SIG-Net v4 (frozen),regression,0.8754229138053133
+ESOL,bm_scaffold,2,v4 w/o residual correction,regression,0.8776258186401631
+ESOL,bm_scaffold,2,v4 w/o composite kernel,regression,0.8919228228912786
+ESOL,bm_scaffold,2,v4 w/o novelty shrinkage,regression,0.8731915294069469
+ESOL,bm_scaffold,2,SIG-Net v3 router (7),regression,0.87792490537572
+ESOL,bm_scaffold,2,Global stack (7),regression,0.8967197752836147
+ESOL,bm_scaffold,2,Global stack (9),regression,0.8966425500806048
+ESOL,bm_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],regression,0.8871711619621402
+ESOL,bm_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],regression,0.89643215969912
+ESOL,bm_scaffold,2,GINE [5-fold bagged],regression,0.9389633311486406
+ESOL,bm_scaffold,2,AttentiveFP [5-fold bagged],regression,1.012266600161225
+ESOL,bm_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.9063160951210708
+ESOL,bm_scaffold,2,RF (RDKit-2D) [5-fold bagged],regression,0.9471009048133724
+ESOL,bm_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],regression,0.8952040102278941
+ESOL,bm_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.0801978789235323
+ESOL,bm_scaffold,2,XGBoost (ECFP4) [5-fold bagged],regression,1.4739940287297983
+ESOL,bm_scaffold,3,SIG-Net v4 (frozen),regression,0.6782136658700149
+ESOL,bm_scaffold,3,v4 w/o residual correction,regression,0.6782136658700149
+ESOL,bm_scaffold,3,v4 w/o composite kernel,regression,0.6782136658700149
+ESOL,bm_scaffold,3,v4 w/o novelty shrinkage,regression,0.6782136658700149
+ESOL,bm_scaffold,3,SIG-Net v3 router (7),regression,0.6783353563317013
+ESOL,bm_scaffold,3,Global stack (7),regression,0.6783353563317013
+ESOL,bm_scaffold,3,Global stack (9),regression,0.6782136658700149
+ESOL,bm_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6800205503883935
+ESOL,bm_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6778913507723328
+ESOL,bm_scaffold,3,GINE [5-fold bagged],regression,0.7418469006799376
+ESOL,bm_scaffold,3,AttentiveFP [5-fold bagged],regression,0.7997327782468754
+ESOL,bm_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.770799006470975
+ESOL,bm_scaffold,3,RF (RDKit-2D) [5-fold bagged],regression,0.8063188355752473
+ESOL,bm_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],regression,0.7118177767704935
+ESOL,bm_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.1528930714056689
+ESOL,bm_scaffold,3,XGBoost (ECFP4) [5-fold bagged],regression,1.5349502627769191
+ESOL,butina_cluster,1,SIG-Net v4 (frozen),regression,0.6379987833217736
+ESOL,butina_cluster,1,v4 w/o residual correction,regression,0.6401850751335919
+ESOL,butina_cluster,1,v4 w/o composite kernel,regression,0.633390581704866
+ESOL,butina_cluster,1,v4 w/o novelty shrinkage,regression,0.6380270960088348
+ESOL,butina_cluster,1,SIG-Net v3 router (7),regression,0.6434335748361134
+ESOL,butina_cluster,1,Global stack (7),regression,0.6405535674132622
+ESOL,butina_cluster,1,Global stack (9),regression,0.6405692946755069
+ESOL,butina_cluster,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6743671124245214
+ESOL,butina_cluster,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6744015617854645
+ESOL,butina_cluster,1,GINE [5-fold bagged],regression,0.681840138090654
+ESOL,butina_cluster,1,AttentiveFP [5-fold bagged],regression,0.7095307838398244
+ESOL,butina_cluster,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.6944114670509239
+ESOL,butina_cluster,1,RF (RDKit-2D) [5-fold bagged],regression,0.7608514481571612
+ESOL,butina_cluster,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6425121433960274
+ESOL,butina_cluster,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.0058286747331084
+ESOL,butina_cluster,1,XGBoost (ECFP4) [5-fold bagged],regression,1.3691115980547477
+ESOL,butina_cluster,2,SIG-Net v4 (frozen),regression,0.5854853162552975
+ESOL,butina_cluster,2,v4 w/o residual correction,regression,0.57956678342223
+ESOL,butina_cluster,2,v4 w/o composite kernel,regression,0.5818894511726319
+ESOL,butina_cluster,2,v4 w/o novelty shrinkage,regression,0.5817711293360837
+ESOL,butina_cluster,2,SIG-Net v3 router (7),regression,0.5804017076287858
+ESOL,butina_cluster,2,Global stack (7),regression,0.6051829007520733
+ESOL,butina_cluster,2,Global stack (9),regression,0.6052547992850613
+ESOL,butina_cluster,2,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6455720501498392
+ESOL,butina_cluster,2,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6532597838595247
+ESOL,butina_cluster,2,GINE [5-fold bagged],regression,0.6020999874204488
+ESOL,butina_cluster,2,AttentiveFP [5-fold bagged],regression,0.6456404765946647
+ESOL,butina_cluster,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.7560993181392297
+ESOL,butina_cluster,2,RF (RDKit-2D) [5-fold bagged],regression,0.8485591358780175
+ESOL,butina_cluster,2,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6661611999019322
+ESOL,butina_cluster,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.2000415069657102
+ESOL,butina_cluster,2,XGBoost (ECFP4) [5-fold bagged],regression,1.3629822779658314
+ESOL,butina_cluster,3,SIG-Net v4 (frozen),regression,0.5555298207678435
+ESOL,butina_cluster,3,v4 w/o residual correction,regression,0.5529050914226283
+ESOL,butina_cluster,3,v4 w/o composite kernel,regression,0.5569376737275279
+ESOL,butina_cluster,3,v4 w/o novelty shrinkage,regression,0.5614414197663059
+ESOL,butina_cluster,3,SIG-Net v3 router (7),regression,0.56698499632054
+ESOL,butina_cluster,3,Global stack (7),regression,0.570654072455059
+ESOL,butina_cluster,3,Global stack (9),regression,0.5706467843643698
+ESOL,butina_cluster,3,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6079914244324788
+ESOL,butina_cluster,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.5955859794305737
+ESOL,butina_cluster,3,GINE [5-fold bagged],regression,0.5983646409858552
+ESOL,butina_cluster,3,AttentiveFP [5-fold bagged],regression,0.5973382939384458
+ESOL,butina_cluster,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.5715870471812708
+ESOL,butina_cluster,3,RF (RDKit-2D) [5-fold bagged],regression,0.6441547886823364
+ESOL,butina_cluster,3,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6178989403466791
+ESOL,butina_cluster,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.7500373864673673
+ESOL,butina_cluster,3,XGBoost (ECFP4) [5-fold bagged],regression,1.2995615231355728
+ESOL,generic_scaffold,1,SIG-Net v4 (frozen),regression,0.7877127710165017
+ESOL,generic_scaffold,1,v4 w/o residual correction,regression,0.8333241208270208
+ESOL,generic_scaffold,1,v4 w/o composite kernel,regression,0.8152879447278553
+ESOL,generic_scaffold,1,v4 w/o novelty shrinkage,regression,0.8333241208270208
+ESOL,generic_scaffold,1,SIG-Net v3 router (7),regression,0.7304198949776778
+ESOL,generic_scaffold,1,Global stack (7),regression,0.7201453471652154
+ESOL,generic_scaffold,1,Global stack (9),regression,0.7201776279342164
+ESOL,generic_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.7148337657260969
+ESOL,generic_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.713742432100206
+ESOL,generic_scaffold,1,GINE [5-fold bagged],regression,0.7051927038973058
+ESOL,generic_scaffold,1,AttentiveFP [5-fold bagged],regression,0.7477770998499201
+ESOL,generic_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.9123231299307532
+ESOL,generic_scaffold,1,RF (RDKit-2D) [5-fold bagged],regression,0.9311508208876004
+ESOL,generic_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.8769372116571024
+ESOL,generic_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.420912365594183
+ESOL,generic_scaffold,1,XGBoost (ECFP4) [5-fold bagged],regression,1.9002177832950324
+ESOL,generic_scaffold,2,SIG-Net v4 (frozen),regression,0.7277248263089432
+ESOL,generic_scaffold,2,v4 w/o residual correction,regression,0.7277248263089432
+ESOL,generic_scaffold,2,v4 w/o composite kernel,regression,0.7277248263089432
+ESOL,generic_scaffold,2,v4 w/o novelty shrinkage,regression,0.7277248263089432
+ESOL,generic_scaffold,2,SIG-Net v3 router (7),regression,0.720671845180867
+ESOL,generic_scaffold,2,Global stack (7),regression,0.7276874864286922
+ESOL,generic_scaffold,2,Global stack (9),regression,0.7277248263089431
+ESOL,generic_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],regression,0.7519302605808746
+ESOL,generic_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],regression,0.7493443847939942
+ESOL,generic_scaffold,2,GINE [5-fold bagged],regression,0.7989244092164443
+ESOL,generic_scaffold,2,AttentiveFP [5-fold bagged],regression,0.7936171394289092
+ESOL,generic_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.7064735654729147
+ESOL,generic_scaffold,2,RF (RDKit-2D) [5-fold bagged],regression,0.7176778149541521
+ESOL,generic_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],regression,0.7189140637062045
+ESOL,generic_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.1719022690787377
+ESOL,generic_scaffold,2,XGBoost (ECFP4) [5-fold bagged],regression,1.615598968404212
+ESOL,generic_scaffold,3,SIG-Net v4 (frozen),regression,0.6951423384331563
+ESOL,generic_scaffold,3,v4 w/o residual correction,regression,0.6962988265750013
+ESOL,generic_scaffold,3,v4 w/o composite kernel,regression,0.6889999253470191
+ESOL,generic_scaffold,3,v4 w/o novelty shrinkage,regression,0.7199734525076946
+ESOL,generic_scaffold,3,SIG-Net v3 router (7),regression,0.6964524926718578
+ESOL,generic_scaffold,3,Global stack (7),regression,0.6964524926718578
+ESOL,generic_scaffold,3,Global stack (9),regression,0.6962988265750013
+ESOL,generic_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],regression,0.7020082430985342
+ESOL,generic_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.7224478649421655
+ESOL,generic_scaffold,3,GINE [5-fold bagged],regression,0.7613804563099309
+ESOL,generic_scaffold,3,AttentiveFP [5-fold bagged],regression,0.6878152827348857
+ESOL,generic_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.7567482103526231
+ESOL,generic_scaffold,3,RF (RDKit-2D) [5-fold bagged],regression,0.7901579408997497
+ESOL,generic_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],regression,0.777992543157061
+ESOL,generic_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.0654593148410558
+ESOL,generic_scaffold,3,XGBoost (ECFP4) [5-fold bagged],regression,1.4559523871422324
+ESOL,random,1,SIG-Net v4 (frozen),regression,0.4947127848694346
+ESOL,random,1,v4 w/o residual correction,regression,0.4983598221172446
+ESOL,random,1,v4 w/o composite kernel,regression,0.5003107834866216
+ESOL,random,1,v4 w/o novelty shrinkage,regression,0.493805758736308
+ESOL,random,1,SIG-Net v3 router (7),regression,0.5140709965461845
+ESOL,random,1,Global stack (7),regression,0.5173191986609367
+ESOL,random,1,Global stack (9),regression,0.5172528068313558
+ESOL,random,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.49951885533330465
+ESOL,random,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.5185677116575661
+ESOL,random,1,GINE [5-fold bagged],regression,0.5813330171568722
+ESOL,random,1,AttentiveFP [5-fold bagged],regression,0.5613936696093649
+ESOL,random,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.5448619666773145
+ESOL,random,1,RF (RDKit-2D) [5-fold bagged],regression,0.6127151854864871
+ESOL,random,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.5743410542300977
+ESOL,random,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.6971380545873652
+ESOL,random,1,XGBoost (ECFP4) [5-fold bagged],regression,1.1116614142956343
+ESOL,random,2,SIG-Net v4 (frozen),regression,0.5525435195636552
+ESOL,random,2,v4 w/o residual correction,regression,0.5641662495270321
+ESOL,random,2,v4 w/o composite kernel,regression,0.548686672244342
+ESOL,random,2,v4 w/o novelty shrinkage,regression,0.5446150457760077
+ESOL,random,2,SIG-Net v3 router (7),regression,0.5976212487728475
+ESOL,random,2,Global stack (7),regression,0.5617661679080125
+ESOL,random,2,Global stack (9),regression,0.5617703215134584
+ESOL,random,2,D-MPNN + RDKit-2D [5-fold bagged],regression,0.5663109680826743
+ESOL,random,2,D-MPNN + Deep CORAL [5-fold bagged],regression,0.5628542335770276
+ESOL,random,2,GINE [5-fold bagged],regression,0.6094004761096055
+ESOL,random,2,AttentiveFP [5-fold bagged],regression,0.6202335516058348
+ESOL,random,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.5987365702169014
+ESOL,random,2,RF (RDKit-2D) [5-fold bagged],regression,0.678921458317723
+ESOL,random,2,Anchor (Multi-View Stack) [5-fold bagged],regression,0.5796386465831066
+ESOL,random,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.9070556789472735
+ESOL,random,2,XGBoost (ECFP4) [5-fold bagged],regression,1.141538658874392
+ESOL,random,3,SIG-Net v4 (frozen),regression,0.5824008614158108
+ESOL,random,3,v4 w/o residual correction,regression,0.5867283073835354
+ESOL,random,3,v4 w/o composite kernel,regression,0.6183037312340669
+ESOL,random,3,v4 w/o novelty shrinkage,regression,0.5868389287344632
+ESOL,random,3,SIG-Net v3 router (7),regression,0.5806320054451967
+ESOL,random,3,Global stack (7),regression,0.581562396406441
+ESOL,random,3,Global stack (9),regression,0.5815490801029842
+ESOL,random,3,D-MPNN + RDKit-2D [5-fold bagged],regression,0.587274687240372
+ESOL,random,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6059522471488734
+ESOL,random,3,GINE [5-fold bagged],regression,0.6213635577944269
+ESOL,random,3,AttentiveFP [5-fold bagged],regression,0.634165291908654
+ESOL,random,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.6072518741286859
+ESOL,random,3,RF (RDKit-2D) [5-fold bagged],regression,0.6117651365895195
+ESOL,random,3,Anchor (Multi-View Stack) [5-fold bagged],regression,0.5892331441526818
+ESOL,random,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.9022931675373029
+ESOL,random,3,XGBoost (ECFP4) [5-fold bagged],regression,1.14044302424485
+FreeSolv,bm_scaffold,1,SIG-Net v4 (frozen),regression,2.42543231023978
+FreeSolv,bm_scaffold,1,v4 w/o residual correction,regression,2.405589522377706
+FreeSolv,bm_scaffold,1,v4 w/o composite kernel,regression,2.42543231023978
+FreeSolv,bm_scaffold,1,v4 w/o novelty shrinkage,regression,2.407999235864548
+FreeSolv,bm_scaffold,1,SIG-Net v3 router (7),regression,2.408115681180267
+FreeSolv,bm_scaffold,1,Global stack (7),regression,2.408115681180267
+FreeSolv,bm_scaffold,1,Global stack (9),regression,2.4079992358645486
+FreeSolv,bm_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],regression,2.4520290971819976
+FreeSolv,bm_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],regression,2.5751541716592046
+FreeSolv,bm_scaffold,1,GINE [5-fold bagged],regression,2.662218063600851
+FreeSolv,bm_scaffold,1,AttentiveFP [5-fold bagged],regression,2.439367410110242
+FreeSolv,bm_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,2.646225175111553
+FreeSolv,bm_scaffold,1,RF (RDKit-2D) [5-fold bagged],regression,3.2083267263264177
+FreeSolv,bm_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],regression,2.0657713373979867
+FreeSolv,bm_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,4.396646766876837
+FreeSolv,bm_scaffold,1,XGBoost (ECFP4) [5-fold bagged],regression,5.0124536544184215
+FreeSolv,bm_scaffold,2,SIG-Net v4 (frozen),regression,1.5099895785903208
+FreeSolv,bm_scaffold,2,v4 w/o residual correction,regression,1.5269476533642639
+FreeSolv,bm_scaffold,2,v4 w/o composite kernel,regression,1.5190498029766797
+FreeSolv,bm_scaffold,2,v4 w/o novelty shrinkage,regression,1.4347635689389917
+FreeSolv,bm_scaffold,2,SIG-Net v3 router (7),regression,1.5268340436609613
+FreeSolv,bm_scaffold,2,Global stack (7),regression,1.5269560995843756
+FreeSolv,bm_scaffold,2,Global stack (9),regression,1.5269476533642636
+FreeSolv,bm_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],regression,1.7815499949404079
+FreeSolv,bm_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],regression,1.7754510114835402
+FreeSolv,bm_scaffold,2,GINE [5-fold bagged],regression,1.3771569494295015
+FreeSolv,bm_scaffold,2,AttentiveFP [5-fold bagged],regression,1.5522944290529905
+FreeSolv,bm_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,2.6239168154209755
+FreeSolv,bm_scaffold,2,RF (RDKit-2D) [5-fold bagged],regression,2.7442766394740024
+FreeSolv,bm_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],regression,1.7070566141654135
+FreeSolv,bm_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,2.5453047406284695
+FreeSolv,bm_scaffold,2,XGBoost (ECFP4) [5-fold bagged],regression,3.483042514785353
+FreeSolv,bm_scaffold,3,SIG-Net v4 (frozen),regression,1.867079473173918
+FreeSolv,bm_scaffold,3,v4 w/o residual correction,regression,1.8844562921882837
+FreeSolv,bm_scaffold,3,v4 w/o composite kernel,regression,2.0382821176612267
+FreeSolv,bm_scaffold,3,v4 w/o novelty shrinkage,regression,1.822685972731131
+FreeSolv,bm_scaffold,3,SIG-Net v3 router (7),regression,2.0012100684268384
+FreeSolv,bm_scaffold,3,Global stack (7),regression,1.9437417822076737
+FreeSolv,bm_scaffold,3,Global stack (9),regression,1.9437454081794667
+FreeSolv,bm_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],regression,2.0193885641616625
+FreeSolv,bm_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],regression,2.262702528572112
+FreeSolv,bm_scaffold,3,GINE [5-fold bagged],regression,1.8447720108547856
+FreeSolv,bm_scaffold,3,AttentiveFP [5-fold bagged],regression,1.997686225769931
+FreeSolv,bm_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,2.6858604632001573
+FreeSolv,bm_scaffold,3,RF (RDKit-2D) [5-fold bagged],regression,3.065997377778395
+FreeSolv,bm_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],regression,2.1465050318869054
+FreeSolv,bm_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,2.998533074097013
+FreeSolv,bm_scaffold,3,XGBoost (ECFP4) [5-fold bagged],regression,3.7062370493779055
+FreeSolv,butina_cluster,1,SIG-Net v4 (frozen),regression,0.5480112742607366
+FreeSolv,butina_cluster,1,v4 w/o residual correction,regression,0.5616781065045979
+FreeSolv,butina_cluster,1,v4 w/o composite kernel,regression,0.5619134467108853
+FreeSolv,butina_cluster,1,v4 w/o novelty shrinkage,regression,0.5416427744570583
+FreeSolv,butina_cluster,1,SIG-Net v3 router (7),regression,0.5992827677937411
+FreeSolv,butina_cluster,1,Global stack (7),regression,0.5459099603862824
+FreeSolv,butina_cluster,1,Global stack (9),regression,0.5459427944972903
+FreeSolv,butina_cluster,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.7217852472431809
+FreeSolv,butina_cluster,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.7101950286303924
+FreeSolv,butina_cluster,1,GINE [5-fold bagged],regression,0.6247005780132234
+FreeSolv,butina_cluster,1,AttentiveFP [5-fold bagged],regression,0.8007634750005213
+FreeSolv,butina_cluster,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.6551719049446204
+FreeSolv,butina_cluster,1,RF (RDKit-2D) [5-fold bagged],regression,0.7032237152078045
+FreeSolv,butina_cluster,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.5984446096168106
+FreeSolv,butina_cluster,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.4766201353844757
+FreeSolv,butina_cluster,1,XGBoost (ECFP4) [5-fold bagged],regression,1.4772973992591445
+FreeSolv,butina_cluster,2,SIG-Net v4 (frozen),regression,0.9459917126855049
+FreeSolv,butina_cluster,2,v4 w/o residual correction,regression,0.9358277469753278
+FreeSolv,butina_cluster,2,v4 w/o composite kernel,regression,0.9459917126855049
+FreeSolv,butina_cluster,2,v4 w/o novelty shrinkage,regression,0.9723932085219932
+FreeSolv,butina_cluster,2,SIG-Net v3 router (7),regression,0.9315303859373448
+FreeSolv,butina_cluster,2,Global stack (7),regression,0.9916779163993248
+FreeSolv,butina_cluster,2,Global stack (9),regression,0.9916815428955973
+FreeSolv,butina_cluster,2,D-MPNN + RDKit-2D [5-fold bagged],regression,1.217552769764945
+FreeSolv,butina_cluster,2,D-MPNN + Deep CORAL [5-fold bagged],regression,1.2489884782835434
+FreeSolv,butina_cluster,2,GINE [5-fold bagged],regression,1.238088752565603
+FreeSolv,butina_cluster,2,AttentiveFP [5-fold bagged],regression,0.9638567834974824
+FreeSolv,butina_cluster,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,1.5545101781696973
+FreeSolv,butina_cluster,2,RF (RDKit-2D) [5-fold bagged],regression,1.7609489325241634
+FreeSolv,butina_cluster,2,Anchor (Multi-View Stack) [5-fold bagged],regression,1.3280479501160436
+FreeSolv,butina_cluster,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,2.028980491241838
+FreeSolv,butina_cluster,2,XGBoost (ECFP4) [5-fold bagged],regression,1.9571812793929908
+FreeSolv,butina_cluster,3,SIG-Net v4 (frozen),regression,1.0276704340484708
+FreeSolv,butina_cluster,3,v4 w/o residual correction,regression,1.028215483592513
+FreeSolv,butina_cluster,3,v4 w/o composite kernel,regression,1.0276704340484708
+FreeSolv,butina_cluster,3,v4 w/o novelty shrinkage,regression,1.0168186104580539
+FreeSolv,butina_cluster,3,SIG-Net v3 router (7),regression,1.0382889287645103
+FreeSolv,butina_cluster,3,Global stack (7),regression,1.0409555666955372
+FreeSolv,butina_cluster,3,Global stack (9),regression,1.0409553797863165
+FreeSolv,butina_cluster,3,D-MPNN + RDKit-2D [5-fold bagged],regression,1.0039460559507782
+FreeSolv,butina_cluster,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.9889579197788196
+FreeSolv,butina_cluster,3,GINE [5-fold bagged],regression,1.4115260955498294
+FreeSolv,butina_cluster,3,AttentiveFP [5-fold bagged],regression,1.2875050820993479
+FreeSolv,butina_cluster,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,1.2496826646357406
+FreeSolv,butina_cluster,3,RF (RDKit-2D) [5-fold bagged],regression,1.3907158480516542
+FreeSolv,butina_cluster,3,Anchor (Multi-View Stack) [5-fold bagged],regression,1.0326294910498357
+FreeSolv,butina_cluster,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.6664217363293266
+FreeSolv,butina_cluster,3,XGBoost (ECFP4) [5-fold bagged],regression,1.381421786546398
+FreeSolv,generic_scaffold,1,SIG-Net v4 (frozen),regression,1.3993355407789951
+FreeSolv,generic_scaffold,1,v4 w/o residual correction,regression,1.3993355407789951
+FreeSolv,generic_scaffold,1,v4 w/o composite kernel,regression,1.520050030712492
+FreeSolv,generic_scaffold,1,v4 w/o novelty shrinkage,regression,1.5605132018221513
+FreeSolv,generic_scaffold,1,SIG-Net v3 router (7),regression,1.4464553023001427
+FreeSolv,generic_scaffold,1,Global stack (7),regression,1.5738985821781095
+FreeSolv,generic_scaffold,1,Global stack (9),regression,1.573945008650848
+FreeSolv,generic_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],regression,1.6089367765983904
+FreeSolv,generic_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],regression,1.5708761119835615
+FreeSolv,generic_scaffold,1,GINE [5-fold bagged],regression,1.3028813508405688
+FreeSolv,generic_scaffold,1,AttentiveFP [5-fold bagged],regression,1.3324026260640962
+FreeSolv,generic_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,1.7424261720994911
+FreeSolv,generic_scaffold,1,RF (RDKit-2D) [5-fold bagged],regression,1.8172554775023186
+FreeSolv,generic_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],regression,1.43289183813688
+FreeSolv,generic_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,2.56069528237654
+FreeSolv,generic_scaffold,1,XGBoost (ECFP4) [5-fold bagged],regression,2.484983057898098
+FreeSolv,generic_scaffold,2,SIG-Net v4 (frozen),regression,1.4352059735969644
+FreeSolv,generic_scaffold,2,v4 w/o residual correction,regression,1.4352059735969644
+FreeSolv,generic_scaffold,2,v4 w/o composite kernel,regression,1.4906237463776066
+FreeSolv,generic_scaffold,2,v4 w/o novelty shrinkage,regression,1.569521131368872
+FreeSolv,generic_scaffold,2,SIG-Net v3 router (7),regression,1.4190915100829937
+FreeSolv,generic_scaffold,2,Global stack (7),regression,1.5695813545633284
+FreeSolv,generic_scaffold,2,Global stack (9),regression,1.5695211313688717
+FreeSolv,generic_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],regression,1.5799274876555012
+FreeSolv,generic_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],regression,1.5929941305269295
+FreeSolv,generic_scaffold,2,GINE [5-fold bagged],regression,1.376552851428972
+FreeSolv,generic_scaffold,2,AttentiveFP [5-fold bagged],regression,1.2379110991606412
+FreeSolv,generic_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,1.7669417161408258
+FreeSolv,generic_scaffold,2,RF (RDKit-2D) [5-fold bagged],regression,1.848770233037135
+FreeSolv,generic_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],regression,1.4791346925289652
+FreeSolv,generic_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,2.5410649553769873
+FreeSolv,generic_scaffold,2,XGBoost (ECFP4) [5-fold bagged],regression,2.4957696468070067
+FreeSolv,generic_scaffold,3,SIG-Net v4 (frozen),regression,1.3191181456623184
+FreeSolv,generic_scaffold,3,v4 w/o residual correction,regression,1.3243777265593648
+FreeSolv,generic_scaffold,3,v4 w/o composite kernel,regression,1.3432958297191278
+FreeSolv,generic_scaffold,3,v4 w/o novelty shrinkage,regression,1.3906132588384899
+FreeSolv,generic_scaffold,3,SIG-Net v3 router (7),regression,1.4021409332648125
+FreeSolv,generic_scaffold,3,Global stack (7),regression,1.4112118131783378
+FreeSolv,generic_scaffold,3,Global stack (9),regression,1.411258812373475
+FreeSolv,generic_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],regression,1.5483858289827082
+FreeSolv,generic_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],regression,1.5811778047498966
+FreeSolv,generic_scaffold,3,GINE [5-fold bagged],regression,1.3145628380742915
+FreeSolv,generic_scaffold,3,AttentiveFP [5-fold bagged],regression,1.2874148437108794
+FreeSolv,generic_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,1.7271428142093834
+FreeSolv,generic_scaffold,3,RF (RDKit-2D) [5-fold bagged],regression,1.8188101316677299
+FreeSolv,generic_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],regression,1.4760867718640598
+FreeSolv,generic_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,2.435608610674188
+FreeSolv,generic_scaffold,3,XGBoost (ECFP4) [5-fold bagged],regression,2.5088511393374584
+FreeSolv,random,1,SIG-Net v4 (frozen),regression,0.58155816276819
+FreeSolv,random,1,v4 w/o residual correction,regression,0.5986948545488494
+FreeSolv,random,1,v4 w/o composite kernel,regression,0.573269508745264
+FreeSolv,random,1,v4 w/o novelty shrinkage,regression,0.5892846128953282
+FreeSolv,random,1,SIG-Net v3 router (7),regression,0.6100800353044318
+FreeSolv,random,1,Global stack (7),regression,0.6350276154119678
+FreeSolv,random,1,Global stack (9),regression,0.635011522555505
+FreeSolv,random,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.7105338419484192
+FreeSolv,random,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.7169780719316639
+FreeSolv,random,1,GINE [5-fold bagged],regression,0.740133965297785
+FreeSolv,random,1,AttentiveFP [5-fold bagged],regression,0.7065568552949941
+FreeSolv,random,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,1.1473717398161523
+FreeSolv,random,1,RF (RDKit-2D) [5-fold bagged],regression,1.265861950756477
+FreeSolv,random,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.8376040953076441
+FreeSolv,random,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.8425853701436417
+FreeSolv,random,1,XGBoost (ECFP4) [5-fold bagged],regression,1.68884319107817
+FreeSolv,random,2,SIG-Net v4 (frozen),regression,1.1518698893624846
+FreeSolv,random,2,v4 w/o residual correction,regression,1.15195710664045
+FreeSolv,random,2,v4 w/o composite kernel,regression,1.2918588300183165
+FreeSolv,random,2,v4 w/o novelty shrinkage,regression,1.1554853597948804
+FreeSolv,random,2,SIG-Net v3 router (7),regression,1.637140521119697
+FreeSolv,random,2,Global stack (7),regression,1.4693949601484337
+FreeSolv,random,2,Global stack (9),regression,1.4693692231213844
+FreeSolv,random,2,D-MPNN + RDKit-2D [5-fold bagged],regression,1.5832260356500527
+FreeSolv,random,2,D-MPNN + Deep CORAL [5-fold bagged],regression,1.5962254185655362
+FreeSolv,random,2,GINE [5-fold bagged],regression,1.0455449117373878
+FreeSolv,random,2,AttentiveFP [5-fold bagged],regression,1.2546656255408934
+FreeSolv,random,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,2.1485188997543276
+FreeSolv,random,2,RF (RDKit-2D) [5-fold bagged],regression,2.2759384396714615
+FreeSolv,random,2,Anchor (Multi-View Stack) [5-fold bagged],regression,1.7936400719279788
+FreeSolv,random,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,2.3490221468201953
+FreeSolv,random,2,XGBoost (ECFP4) [5-fold bagged],regression,2.706384561571061
+FreeSolv,random,3,SIG-Net v4 (frozen),regression,0.6404907898698214
+FreeSolv,random,3,v4 w/o residual correction,regression,0.6404907898698214
+FreeSolv,random,3,v4 w/o composite kernel,regression,0.6404907898698214
+FreeSolv,random,3,v4 w/o novelty shrinkage,regression,0.6404907898698214
+FreeSolv,random,3,SIG-Net v3 router (7),regression,0.6293839858913264
+FreeSolv,random,3,Global stack (7),regression,0.8740187899051527
+FreeSolv,random,3,Global stack (9),regression,0.8739665291788835
+FreeSolv,random,3,D-MPNN + RDKit-2D [5-fold bagged],regression,0.7744705617825718
+FreeSolv,random,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.7316863527735517
+FreeSolv,random,3,GINE [5-fold bagged],regression,1.2262787051975208
+FreeSolv,random,3,AttentiveFP [5-fold bagged],regression,1.0689742693028406
+FreeSolv,random,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.807131533337276
+FreeSolv,random,3,RF (RDKit-2D) [5-fold bagged],regression,0.9015749792183477
+FreeSolv,random,3,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6607077985597846
+FreeSolv,random,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.4071806050922777
+FreeSolv,random,3,XGBoost (ECFP4) [5-fold bagged],regression,1.6069053739740626
+Lipophilicity,bm_scaffold,1,SIG-Net v4 (frozen),regression,0.5297959189630695
+Lipophilicity,bm_scaffold,1,v4 w/o residual correction,regression,0.5300386411532274
+Lipophilicity,bm_scaffold,1,v4 w/o composite kernel,regression,0.5301933510641968
+Lipophilicity,bm_scaffold,1,v4 w/o novelty shrinkage,regression,0.5335971502566502
+Lipophilicity,bm_scaffold,1,SIG-Net v3 router (7),regression,0.5362610774368146
+Lipophilicity,bm_scaffold,1,Global stack (7),regression,0.5435204627096097
+Lipophilicity,bm_scaffold,1,Global stack (9),regression,0.5435392850984044
+Lipophilicity,bm_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.563017314847331
+Lipophilicity,bm_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.544242660673167
+Lipophilicity,bm_scaffold,1,GINE [5-fold bagged],regression,0.5816186353494466
+Lipophilicity,bm_scaffold,1,AttentiveFP [5-fold bagged],regression,0.5829406952809715
+Lipophilicity,bm_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.6677021287495265
+Lipophilicity,bm_scaffold,1,RF (RDKit-2D) [5-fold bagged],regression,0.7465327760834841
+Lipophilicity,bm_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6517342848663076
+Lipophilicity,bm_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.8377477658641429
+Lipophilicity,bm_scaffold,1,XGBoost (ECFP4) [5-fold bagged],regression,0.8836556554478427
+Lipophilicity,bm_scaffold,2,SIG-Net v4 (frozen),regression,0.5814699521545265
+Lipophilicity,bm_scaffold,2,v4 w/o residual correction,regression,0.5857217763534588
+Lipophilicity,bm_scaffold,2,v4 w/o composite kernel,regression,0.5814699521545265
+Lipophilicity,bm_scaffold,2,v4 w/o novelty shrinkage,regression,0.5736017421211094
+Lipophilicity,bm_scaffold,2,SIG-Net v3 router (7),regression,0.5797380943837007
+Lipophilicity,bm_scaffold,2,Global stack (7),regression,0.5838991473588616
+Lipophilicity,bm_scaffold,2,Global stack (9),regression,0.5838801074088132
+Lipophilicity,bm_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6340137906690472
+Lipophilicity,bm_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6260482659919858
+Lipophilicity,bm_scaffold,2,GINE [5-fold bagged],regression,0.6781609023117503
+Lipophilicity,bm_scaffold,2,AttentiveFP [5-fold bagged],regression,0.6080354946908068
+Lipophilicity,bm_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.7027255032565243
+Lipophilicity,bm_scaffold,2,RF (RDKit-2D) [5-fold bagged],regression,0.809327480194887
+Lipophilicity,bm_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],regression,0.7011358450944253
+Lipophilicity,bm_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.9373111870175994
+Lipophilicity,bm_scaffold,2,XGBoost (ECFP4) [5-fold bagged],regression,0.9859172998700657
+Lipophilicity,bm_scaffold,3,SIG-Net v4 (frozen),regression,0.598426165931389
+Lipophilicity,bm_scaffold,3,v4 w/o residual correction,regression,0.5994186110997746
+Lipophilicity,bm_scaffold,3,v4 w/o composite kernel,regression,0.599266454895372
+Lipophilicity,bm_scaffold,3,v4 w/o novelty shrinkage,regression,0.5986516150881269
+Lipophilicity,bm_scaffold,3,SIG-Net v3 router (7),regression,0.5981035554048175
+Lipophilicity,bm_scaffold,3,Global stack (7),regression,0.599427794780024
+Lipophilicity,bm_scaffold,3,Global stack (9),regression,0.5994186110997745
+Lipophilicity,bm_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6559772517057761
+Lipophilicity,bm_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6722485300330795
+Lipophilicity,bm_scaffold,3,GINE [5-fold bagged],regression,0.6633877002194662
+Lipophilicity,bm_scaffold,3,AttentiveFP [5-fold bagged],regression,0.6260206225751946
+Lipophilicity,bm_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.7140144801664233
+Lipophilicity,bm_scaffold,3,RF (RDKit-2D) [5-fold bagged],regression,0.7883184710619308
+Lipophilicity,bm_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6946072430376649
+Lipophilicity,bm_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.9056094837162346
+Lipophilicity,bm_scaffold,3,XGBoost (ECFP4) [5-fold bagged],regression,0.8916499397713659
+Lipophilicity,butina_cluster,1,SIG-Net v4 (frozen),regression,0.6733795618184392
+Lipophilicity,butina_cluster,1,v4 w/o residual correction,regression,0.6716659015946245
+Lipophilicity,butina_cluster,1,v4 w/o composite kernel,regression,0.6733795618184392
+Lipophilicity,butina_cluster,1,v4 w/o novelty shrinkage,regression,0.6717024483545095
+Lipophilicity,butina_cluster,1,SIG-Net v3 router (7),regression,0.6722617778235984
+Lipophilicity,butina_cluster,1,Global stack (7),regression,0.6722617778235984
+Lipophilicity,butina_cluster,1,Global stack (9),regression,0.6722719527518679
+Lipophilicity,butina_cluster,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.7381121611085327
+Lipophilicity,butina_cluster,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.7374030598055328
+Lipophilicity,butina_cluster,1,GINE [5-fold bagged],regression,0.6971308284775423
+Lipophilicity,butina_cluster,1,AttentiveFP [5-fold bagged],regression,0.7048943407454868
+Lipophilicity,butina_cluster,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.7090961371538086
+Lipophilicity,butina_cluster,1,RF (RDKit-2D) [5-fold bagged],regression,0.7510861756951251
+Lipophilicity,butina_cluster,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6984129195302767
+Lipophilicity,butina_cluster,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.8572738076834004
+Lipophilicity,butina_cluster,1,XGBoost (ECFP4) [5-fold bagged],regression,0.9007007911064135
+Lipophilicity,butina_cluster,2,SIG-Net v4 (frozen),regression,0.8494246105046951
+Lipophilicity,butina_cluster,2,v4 w/o residual correction,regression,0.8505665502382986
+Lipophilicity,butina_cluster,2,v4 w/o composite kernel,regression,0.8494246105046951
+Lipophilicity,butina_cluster,2,v4 w/o novelty shrinkage,regression,0.8412445725443424
+Lipophilicity,butina_cluster,2,SIG-Net v3 router (7),regression,0.8645531782976864
+Lipophilicity,butina_cluster,2,Global stack (7),regression,0.8469124525832531
+Lipophilicity,butina_cluster,2,Global stack (9),regression,0.8471539822471125
+Lipophilicity,butina_cluster,2,D-MPNN + RDKit-2D [5-fold bagged],regression,0.8836859872263575
+Lipophilicity,butina_cluster,2,D-MPNN + Deep CORAL [5-fold bagged],regression,0.8905676300608888
+Lipophilicity,butina_cluster,2,GINE [5-fold bagged],regression,0.8837553118957695
+Lipophilicity,butina_cluster,2,AttentiveFP [5-fold bagged],regression,0.8355275767838488
+Lipophilicity,butina_cluster,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.9766164770624476
+Lipophilicity,butina_cluster,2,RF (RDKit-2D) [5-fold bagged],regression,1.0339679936794053
+Lipophilicity,butina_cluster,2,Anchor (Multi-View Stack) [5-fold bagged],regression,0.8861589748248403
+Lipophilicity,butina_cluster,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,1.113463577253051
+Lipophilicity,butina_cluster,2,XGBoost (ECFP4) [5-fold bagged],regression,1.094711151375297
+Lipophilicity,butina_cluster,3,SIG-Net v4 (frozen),regression,0.7237646843489715
+Lipophilicity,butina_cluster,3,v4 w/o residual correction,regression,0.7237646843489715
+Lipophilicity,butina_cluster,3,v4 w/o composite kernel,regression,0.7229834622066008
+Lipophilicity,butina_cluster,3,v4 w/o novelty shrinkage,regression,0.721934622530163
+Lipophilicity,butina_cluster,3,SIG-Net v3 router (7),regression,0.7360374075882025
+Lipophilicity,butina_cluster,3,Global stack (7),regression,0.7246552995800472
+Lipophilicity,butina_cluster,3,Global stack (9),regression,0.7246166997190405
+Lipophilicity,butina_cluster,3,D-MPNN + RDKit-2D [5-fold bagged],regression,0.8627643983691553
+Lipophilicity,butina_cluster,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.8524667632968739
+Lipophilicity,butina_cluster,3,GINE [5-fold bagged],regression,0.8441577062856439
+Lipophilicity,butina_cluster,3,AttentiveFP [5-fold bagged],regression,0.7614808633042301
+Lipophilicity,butina_cluster,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.7561777505542414
+Lipophilicity,butina_cluster,3,RF (RDKit-2D) [5-fold bagged],regression,0.8358034536781844
+Lipophilicity,butina_cluster,3,Anchor (Multi-View Stack) [5-fold bagged],regression,0.7473883573822818
+Lipophilicity,butina_cluster,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.8146984354785544
+Lipophilicity,butina_cluster,3,XGBoost (ECFP4) [5-fold bagged],regression,0.9069532037527475
+Lipophilicity,generic_scaffold,1,SIG-Net v4 (frozen),regression,0.6313876639126172
+Lipophilicity,generic_scaffold,1,v4 w/o residual correction,regression,0.6299228831896528
+Lipophilicity,generic_scaffold,1,v4 w/o composite kernel,regression,0.6298963401442176
+Lipophilicity,generic_scaffold,1,v4 w/o novelty shrinkage,regression,0.6307722444281908
+Lipophilicity,generic_scaffold,1,SIG-Net v3 router (7),regression,0.6317193226646158
+Lipophilicity,generic_scaffold,1,Global stack (7),regression,0.6317193226646158
+Lipophilicity,generic_scaffold,1,Global stack (9),regression,0.6316724642040814
+Lipophilicity,generic_scaffold,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.7228203174956702
+Lipophilicity,generic_scaffold,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.7136034135071062
+Lipophilicity,generic_scaffold,1,GINE [5-fold bagged],regression,0.6982016328320392
+Lipophilicity,generic_scaffold,1,AttentiveFP [5-fold bagged],regression,0.6002684526198632
+Lipophilicity,generic_scaffold,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.711480059464801
+Lipophilicity,generic_scaffold,1,RF (RDKit-2D) [5-fold bagged],regression,0.7741972929455083
+Lipophilicity,generic_scaffold,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.7072580667044153
+Lipophilicity,generic_scaffold,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.8439335655854031
+Lipophilicity,generic_scaffold,1,XGBoost (ECFP4) [5-fold bagged],regression,0.8667378034747873
+Lipophilicity,generic_scaffold,2,SIG-Net v4 (frozen),regression,0.6013080539103878
+Lipophilicity,generic_scaffold,2,v4 w/o residual correction,regression,0.6005360391887052
+Lipophilicity,generic_scaffold,2,v4 w/o composite kernel,regression,0.599640142739777
+Lipophilicity,generic_scaffold,2,v4 w/o novelty shrinkage,regression,0.6031796399079001
+Lipophilicity,generic_scaffold,2,SIG-Net v3 router (7),regression,0.6043677064694557
+Lipophilicity,generic_scaffold,2,Global stack (7),regression,0.6031646865856112
+Lipophilicity,generic_scaffold,2,Global stack (9),regression,0.6031796399079001
+Lipophilicity,generic_scaffold,2,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6693847361718921
+Lipophilicity,generic_scaffold,2,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6658457778483965
+Lipophilicity,generic_scaffold,2,GINE [5-fold bagged],regression,0.6743537595065291
+Lipophilicity,generic_scaffold,2,AttentiveFP [5-fold bagged],regression,0.6049455273620883
+Lipophilicity,generic_scaffold,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.7586459555384032
+Lipophilicity,generic_scaffold,2,RF (RDKit-2D) [5-fold bagged],regression,0.8458876173671193
+Lipophilicity,generic_scaffold,2,Anchor (Multi-View Stack) [5-fold bagged],regression,0.7393339950126553
+Lipophilicity,generic_scaffold,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.9358264780393684
+Lipophilicity,generic_scaffold,2,XGBoost (ECFP4) [5-fold bagged],regression,1.0440320830017074
+Lipophilicity,generic_scaffold,3,SIG-Net v4 (frozen),regression,0.6197558071146568
+Lipophilicity,generic_scaffold,3,v4 w/o residual correction,regression,0.6255364478838865
+Lipophilicity,generic_scaffold,3,v4 w/o composite kernel,regression,0.6187334560096788
+Lipophilicity,generic_scaffold,3,v4 w/o novelty shrinkage,regression,0.6217997900311258
+Lipophilicity,generic_scaffold,3,SIG-Net v3 router (7),regression,0.6232405689708261
+Lipophilicity,generic_scaffold,3,Global stack (7),regression,0.6233560632538779
+Lipophilicity,generic_scaffold,3,Global stack (9),regression,0.6243029912327221
+Lipophilicity,generic_scaffold,3,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6769747505356261
+Lipophilicity,generic_scaffold,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6821218819633103
+Lipophilicity,generic_scaffold,3,GINE [5-fold bagged],regression,0.6716597960824905
+Lipophilicity,generic_scaffold,3,AttentiveFP [5-fold bagged],regression,0.6334338391441359
+Lipophilicity,generic_scaffold,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.7381936864831343
+Lipophilicity,generic_scaffold,3,RF (RDKit-2D) [5-fold bagged],regression,0.8015456458651294
+Lipophilicity,generic_scaffold,3,Anchor (Multi-View Stack) [5-fold bagged],regression,0.7390126101638667
+Lipophilicity,generic_scaffold,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.9969926788022545
+Lipophilicity,generic_scaffold,3,XGBoost (ECFP4) [5-fold bagged],regression,0.9698055971084397
+Lipophilicity,random,1,SIG-Net v4 (frozen),regression,0.5916000880897501
+Lipophilicity,random,1,v4 w/o residual correction,regression,0.600225618065897
+Lipophilicity,random,1,v4 w/o composite kernel,regression,0.5831145990410123
+Lipophilicity,random,1,v4 w/o novelty shrinkage,regression,0.5905774363035814
+Lipophilicity,random,1,SIG-Net v3 router (7),regression,0.601831348614723
+Lipophilicity,random,1,Global stack (7),regression,0.5928685670196828
+Lipophilicity,random,1,Global stack (9),regression,0.5928560439091126
+Lipophilicity,random,1,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6523180950705258
+Lipophilicity,random,1,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6619218915462016
+Lipophilicity,random,1,GINE [5-fold bagged],regression,0.6132470319529532
+Lipophilicity,random,1,AttentiveFP [5-fold bagged],regression,0.6077785818610806
+Lipophilicity,random,1,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.6730887312043906
+Lipophilicity,random,1,RF (RDKit-2D) [5-fold bagged],regression,0.7383755331714735
+Lipophilicity,random,1,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6773324699776087
+Lipophilicity,random,1,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.8030578441401728
+Lipophilicity,random,1,XGBoost (ECFP4) [5-fold bagged],regression,0.8752998220991254
+Lipophilicity,random,2,SIG-Net v4 (frozen),regression,0.5105077494651853
+Lipophilicity,random,2,v4 w/o residual correction,regression,0.5242172007188506
+Lipophilicity,random,2,v4 w/o composite kernel,regression,0.5105077494651853
+Lipophilicity,random,2,v4 w/o novelty shrinkage,regression,0.5134796407848305
+Lipophilicity,random,2,SIG-Net v3 router (7),regression,0.5173041298122522
+Lipophilicity,random,2,Global stack (7),regression,0.5189358829236952
+Lipophilicity,random,2,Global stack (9),regression,0.5189616546859512
+Lipophilicity,random,2,D-MPNN + RDKit-2D [5-fold bagged],regression,0.571630507249794
+Lipophilicity,random,2,D-MPNN + Deep CORAL [5-fold bagged],regression,0.5759141568759948
+Lipophilicity,random,2,GINE [5-fold bagged],regression,0.5653818354639971
+Lipophilicity,random,2,AttentiveFP [5-fold bagged],regression,0.5231338793118196
+Lipophilicity,random,2,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.6022404843818079
+Lipophilicity,random,2,RF (RDKit-2D) [5-fold bagged],regression,0.6964169989447946
+Lipophilicity,random,2,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6131916417561623
+Lipophilicity,random,2,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.7898342465184286
+Lipophilicity,random,2,XGBoost (ECFP4) [5-fold bagged],regression,0.8699396465394716
+Lipophilicity,random,3,SIG-Net v4 (frozen),regression,0.5563982285178294
+Lipophilicity,random,3,v4 w/o residual correction,regression,0.5588896182326867
+Lipophilicity,random,3,v4 w/o composite kernel,regression,0.5563982285178294
+Lipophilicity,random,3,v4 w/o novelty shrinkage,regression,0.5565018599707907
+Lipophilicity,random,3,SIG-Net v3 router (7),regression,0.5677276008055553
+Lipophilicity,random,3,Global stack (7),regression,0.5628541562476289
+Lipophilicity,random,3,Global stack (9),regression,0.5629496966307065
+Lipophilicity,random,3,D-MPNN + RDKit-2D [5-fold bagged],regression,0.6281571635078429
+Lipophilicity,random,3,D-MPNN + Deep CORAL [5-fold bagged],regression,0.6327489123348977
+Lipophilicity,random,3,GINE [5-fold bagged],regression,0.6129684249687489
+Lipophilicity,random,3,AttentiveFP [5-fold bagged],regression,0.5602675623293655
+Lipophilicity,random,3,XGBoost (ECFP4 + RDKit-2D) [5-fold bagged],regression,0.6770258392231886
+Lipophilicity,random,3,RF (RDKit-2D) [5-fold bagged],regression,0.7492944165085993
+Lipophilicity,random,3,Anchor (Multi-View Stack) [5-fold bagged],regression,0.6762865437099473
+Lipophilicity,random,3,ChemBERTa-2 + XGBoost [5-fold bagged],regression,0.8492701470264422
+Lipophilicity,random,3,XGBoost (ECFP4) [5-fold bagged],regression,0.8581403279791939
