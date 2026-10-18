@@ -10,3 +10,7 @@ manuscript/*.out
 manuscript/*.out.log
 manuscript/acs-*.bib
 manuscript/*.pre_v4
+manuscript/eq-*.png
+manuscript/pg-*.png
+manuscript/cf-*.png
+manuscript/fw-*.png
